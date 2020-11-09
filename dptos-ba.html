@@ -1,0 +1,2856 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dce3e03c0ea84be4948baf72c0611ab6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_dce3e03c0ea84be4948baf72c0611ab6" ></div>
+        
+</body>
+<script>    
+    
+            var map_dce3e03c0ea84be4948baf72c0611ab6 = L.map(
+                "map_dce3e03c0ea84be4948baf72c0611ab6",
+                {
+                    center: [-34.63114173719095, -58.557584633517536],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f6fb8c1632b46e2a23cc1955aad3c24 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+            var circle_42476caa10ce4cc79c18066ca858f2fe = L.circle(
+                [-35.52651132270404, -60.23015765662994],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 503.52, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_2837b63da24b4133810bc66092d28895 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e43657db70d34bd7ad0953fae1da00da = $(`<div id="html_e43657db70d34bd7ad0953fae1da00da" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 25176.0</div>`)[0];
+            popup_2837b63da24b4133810bc66092d28895.setContent(html_e43657db70d34bd7ad0953fae1da00da);
+        
+
+        circle_42476caa10ce4cc79c18066ca858f2fe.bindPopup(popup_2837b63da24b4133810bc66092d28895)
+        ;
+
+        
+    
+    
+            var circle_c85968e6de84483c800f74480c91bd27 = L.circle(
+                [-37.196305633313436, -63.05498488064983],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 212.84, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_d66cbe715afb429fb284532cc21320f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05e7a22dac6b4f48b2e43b1e71dafe2c = $(`<div id="html_05e7a22dac6b4f48b2e43b1e71dafe2c" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 10642.0</div>`)[0];
+            popup_d66cbe715afb429fb284532cc21320f2.setContent(html_05e7a22dac6b4f48b2e43b1e71dafe2c);
+        
+
+        circle_c85968e6de84483c800f74480c91bd27.bindPopup(popup_d66cbe715afb429fb284532cc21320f2)
+        ;
+
+        
+    
+    
+            var circle_b6d081f153d84cfd884651d462038585 = L.circle(
+                [-35.03638179593259, -60.28286930811938],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 158.1, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_1c3387a8bd9a4a7f81011ca16dd2031e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1e5698f33304a3ab66a0cada3ddd021 = $(`<div id="html_d1e5698f33304a3ab66a0cada3ddd021" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 7905.0</div>`)[0];
+            popup_1c3387a8bd9a4a7f81011ca16dd2031e.setContent(html_d1e5698f33304a3ab66a0cada3ddd021);
+        
+
+        circle_b6d081f153d84cfd884651d462038585.bindPopup(popup_1c3387a8bd9a4a7f81011ca16dd2031e)
+        ;
+
+        
+    
+    
+            var circle_6f5e085209b443e39948acd8b3239019 = L.circle(
+                [-34.8355700987341, -58.36739784514794],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 7007.82, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_a4474756c439432498ede6aa76fd8637 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d2dbe53a80e414bbe20a649e83f8431 = $(`<div id="html_7d2dbe53a80e414bbe20a649e83f8431" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 350391.0</div>`)[0];
+            popup_a4474756c439432498ede6aa76fd8637.setContent(html_7d2dbe53a80e414bbe20a649e83f8431);
+        
+
+        circle_6f5e085209b443e39948acd8b3239019.bindPopup(popup_a4474756c439432498ede6aa76fd8637)
+        ;
+
+        
+    
+    
+            var circle_521d245adb554fed9910da264a3d4fc8 = L.circle(
+                [-34.01131517462258, -60.06276252745301],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 413.12, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_65da5758fcee460ea1d85e6a5a3bc351 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d011a3824664003b6b39ea68f66e138 = $(`<div id="html_7d011a3824664003b6b39ea68f66e138" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 20656.0</div>`)[0];
+            popup_65da5758fcee460ea1d85e6a5a3bc351.setContent(html_7d011a3824664003b6b39ea68f66e138);
+        
+
+        circle_521d245adb554fed9910da264a3d4fc8.bindPopup(popup_65da5758fcee460ea1d85e6a5a3bc351)
+        ;
+
+        
+    
+    
+            var circle_9b51ebd79f064d2e92e687733e1de840 = L.circle(
+                [-34.67822884786109, -58.34123681738008],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 4484.02, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_5b600c35c61d4b73aaf20fa928e811eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ff345be323a45d4918540df4970af69 = $(`<div id="html_7ff345be323a45d4918540df4970af69" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 224201.0</div>`)[0];
+            popup_5b600c35c61d4b73aaf20fa928e811eb.setContent(html_7ff345be323a45d4918540df4970af69);
+        
+
+        circle_9b51ebd79f064d2e92e687733e1de840.bindPopup(popup_5b600c35c61d4b73aaf20fa928e811eb)
+        ;
+
+        
+    
+    
+            var circle_a898ae42779d4230af378c45118cd766 = L.circle(
+                [-37.03478216902738, -58.44258132206663],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 273.54, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_40261759595a47b1a5a0f58d2f70d057 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89999f92bbe845b59c5e4c6abdc326b9 = $(`<div id="html_89999f92bbe845b59c5e4c6abdc326b9" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 13677.0</div>`)[0];
+            popup_40261759595a47b1a5a0f58d2f70d057.setContent(html_89999f92bbe845b59c5e4c6abdc326b9);
+        
+
+        circle_a898ae42779d4230af378c45118cd766.bindPopup(popup_40261759595a47b1a5a0f58d2f70d057)
+        ;
+
+        
+    
+    
+            var circle_250ad62cfa2d47fcbd11df5bba7806a7 = L.circle(
+                [-36.785771923331005, -59.6966521578889],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 859.8, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_cd291c4502c642e69d5758884eee3969 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a366614ba7845ba8600504e2e0f4a6e = $(`<div id="html_4a366614ba7845ba8600504e2e0f4a6e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 42990.0</div>`)[0];
+            popup_cd291c4502c642e69d5758884eee3969.setContent(html_4a366614ba7845ba8600504e2e0f4a6e);
+        
+
+        circle_250ad62cfa2d47fcbd11df5bba7806a7.bindPopup(popup_cd291c4502c642e69d5758884eee3969)
+        ;
+
+        
+    
+    
+            var circle_295ed9896b3c48fa826e81a100c1f6b6 = L.circle(
+                [-38.58097189952263, -62.165716931501834],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3889.3, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_aab059394d4240b2a322debdfc6cb4cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82664531f3ec4bcd90d8baff61884646 = $(`<div id="html_82664531f3ec4bcd90d8baff61884646" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 194465.0</div>`)[0];
+            popup_aab059394d4240b2a322debdfc6cb4cf.setContent(html_82664531f3ec4bcd90d8baff61884646);
+        
+
+        circle_295ed9896b3c48fa826e81a100c1f6b6.bindPopup(popup_aab059394d4240b2a322debdfc6cb4cf)
+        ;
+
+        
+    
+    
+            var circle_e4ac7f871e7b402d95ec9e74eaa47a72 = L.circle(
+                [-37.71427281925188, -58.27207769195648],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 629.92, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_8101f30d2c68489780b5969af46be07d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc9c1e971c974eadb0c1662715d231bb = $(`<div id="html_fc9c1e971c974eadb0c1662715d231bb" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 31496.0</div>`)[0];
+            popup_8101f30d2c68489780b5969af46be07d.setContent(html_fc9c1e971c974eadb0c1662715d231bb);
+        
+
+        circle_e4ac7f871e7b402d95ec9e74eaa47a72.bindPopup(popup_8101f30d2c68489780b5969af46be07d)
+        ;
+
+        
+    
+    
+            var circle_a7065f5a30944ea08436ce09ff39fc6e = L.circle(
+                [-33.93219145703671, -59.4929504872422],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 482.6, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_9c0d10520785477c9e32e47d51ed606b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb884668042d49a398ba6225b30baa65 = $(`<div id="html_cb884668042d49a398ba6225b30baa65" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 24130.0</div>`)[0];
+            popup_9c0d10520785477c9e32e47d51ed606b.setContent(html_cb884668042d49a398ba6225b30baa65);
+        
+
+        circle_a7065f5a30944ea08436ce09ff39fc6e.bindPopup(popup_9c0d10520785477c9e32e47d51ed606b)
+        ;
+
+        
+    
+    
+            var circle_95ebe5beee3e4651a7151e846fc0472e = L.circle(
+                [-37.5852783156394, -59.8883008695615],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 265.88, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_67c7a22e4f094e62aa14344cef3dd5c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c40ed3283b040b4aa9e055449eac375 = $(`<div id="html_3c40ed3283b040b4aa9e055449eac375" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 13294.0</div>`)[0];
+            popup_67c7a22e4f094e62aa14344cef3dd5c2.setContent(html_3c40ed3283b040b4aa9e055449eac375);
+        
+
+        circle_95ebe5beee3e4651a7151e846fc0472e.bindPopup(popup_67c7a22e4f094e62aa14344cef3dd5c2)
+        ;
+
+        
+    
+    
+            var circle_a705a407dbf2473da51edd4b3168d4cc = L.circle(
+                [-34.81792409991811, -58.15525145250323],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 4145.44, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_c416b268891f4277ac5afbc4c5c0ba54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4488f6603a1b43fb8550a5b013419ff0 = $(`<div id="html_4488f6603a1b43fb8550a5b013419ff0" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 207272.0</div>`)[0];
+            popup_c416b268891f4277ac5afbc4c5c0ba54.setContent(html_4488f6603a1b43fb8550a5b013419ff0);
+        
+
+        circle_a705a407dbf2473da51edd4b3168d4cc.bindPopup(popup_c416b268891f4277ac5afbc4c5c0ba54)
+        ;
+
+        
+    
+    
+            var circle_9275374d905c48b69eb1e4ada9eb984f = L.circle(
+                [-34.90945812607399, -57.8281445906816],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1285.66, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_bd9d980f39dc4348a8120c250375015e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9d4541425b74a068251ea3a5f2153d6 = $(`<div id="html_a9d4541425b74a068251ea3a5f2153d6" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 64283.0</div>`)[0];
+            popup_bd9d980f39dc4348a8120c250375015e.setContent(html_a9d4541425b74a068251ea3a5f2153d6);
+        
+
+        circle_9275374d905c48b69eb1e4ada9eb984f.bindPopup(popup_bd9d980f39dc4348a8120c250375015e)
+        ;
+
+        
+    
+    
+            var circle_713ae0c8be05416ea45830e9b0be49d7 = L.circle(
+                [-36.29822174998929, -61.149683614810804],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 494.5, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_dfced686e693428ca597072f79fe0112 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1f339cdcd764f9096f61340f1ff5c30 = $(`<div id="html_b1f339cdcd764f9096f61340f1ff5c30" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 24725.0</div>`)[0];
+            popup_dfced686e693428ca597072f79fe0112.setContent(html_b1f339cdcd764f9096f61340f1ff5c30);
+        
+
+        circle_713ae0c8be05416ea45830e9b0be49d7.bindPopup(popup_dfced686e693428ca597072f79fe0112)
+        ;
+
+        
+    
+    
+            var circle_fabcada2e48a44ea9b0c57fa240667b8 = L.circle(
+                [-35.06109285310712, -60.60422955111185],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 592.76, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_424c5df620ed403f89d2778e7c6bb067 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc3e5bbe07e94c6c95b7a661e7c28bb5 = $(`<div id="html_fc3e5bbe07e94c6c95b7a661e7c28bb5" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 29638.0</div>`)[0];
+            popup_424c5df620ed403f89d2778e7c6bb067.setContent(html_fc3e5bbe07e94c6c95b7a661e7c28bb5);
+        
+
+        circle_fabcada2e48a44ea9b0c57fa240667b8.bindPopup(popup_424c5df620ed403f89d2778e7c6bb067)
+        ;
+
+        
+    
+    
+            var circle_034e6af79da644eb9b66ac83cf1a2caf = L.circle(
+                [-35.22211047020387, -58.1760719408729],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 388.6, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_79d59283bd7845e09b132c279f2464e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a38e88c10144c5a844d84563cc077cf = $(`<div id="html_2a38e88c10144c5a844d84563cc077cf" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 19430.0</div>`)[0];
+            popup_79d59283bd7845e09b132c279f2464e5.setContent(html_2a38e88c10144c5a844d84563cc077cf);
+        
+
+        circle_034e6af79da644eb9b66ac83cf1a2caf.bindPopup(popup_79d59283bd7845e09b132c279f2464e5)
+        ;
+
+        
+    
+    
+            var circle_fff2afca99ea4278823608748a0576cd = L.circle(
+                [-34.138195729077744, -58.88302226759498],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1280.28, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_ef00b78b69354430b597189d2cbd9b39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cef1cb856d24aa69fb08acc9ae8256f = $(`<div id="html_5cef1cb856d24aa69fb08acc9ae8256f" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 64014.0</div>`)[0];
+            popup_ef00b78b69354430b597189d2cbd9b39.setContent(html_5cef1cb856d24aa69fb08acc9ae8256f);
+        
+
+        circle_fff2afca99ea4278823608748a0576cd.bindPopup(popup_ef00b78b69354430b597189d2cbd9b39)
+        ;
+
+        
+    
+    
+            var circle_eced595942954d9f91bd8bcacda56ee6 = L.circle(
+                [-34.14970650182693, -59.854803796017016],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 209.02, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_d2520f2ad1524a97b8650098854a5ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bf4e96605be40e1a0478172296d00e4 = $(`<div id="html_0bf4e96605be40e1a0478172296d00e4" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 10451.0</div>`)[0];
+            popup_d2520f2ad1524a97b8650098854a5ef1.setContent(html_0bf4e96605be40e1a0478172296d00e4);
+        
+
+        circle_eced595942954d9f91bd8bcacda56ee6.bindPopup(popup_d2520f2ad1524a97b8650098854a5ef1)
+        ;
+
+        
+    
+    
+            var circle_81eee2f4f35f4c83a71d9f13ab511867 = L.circle(
+                [-35.749655126077286, -61.37375226868637],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 307.74, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_ac5db74768804467a99a210e0ba3e006 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6eeb892d754444ca7f6deead5f3a2e9 = $(`<div id="html_c6eeb892d754444ca7f6deead5f3a2e9" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 15387.0</div>`)[0];
+            popup_ac5db74768804467a99a210e0ba3e006.setContent(html_c6eeb892d754444ca7f6deead5f3a2e9);
+        
+
+        circle_81eee2f4f35f4c83a71d9f13ab511867.bindPopup(popup_ac5db74768804467a99a210e0ba3e006)
+        ;
+
+        
+    
+    
+            var circle_32b645c079104cbcba40bef19dc920b1 = L.circle(
+                [-35.37948892076231, -62.42956118935559],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 164.46, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_4253639524f84b04b44d20b83fbfa961 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b19961f5ce3b490fb9c37fa26e9a4c82 = $(`<div id="html_b19961f5ce3b490fb9c37fa26e9a4c82" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 8223.0</div>`)[0];
+            popup_4253639524f84b04b44d20b83fbfa961.setContent(html_b19961f5ce3b490fb9c37fa26e9a4c82);
+        
+
+        circle_32b645c079104cbcba40bef19dc920b1.bindPopup(popup_4253639524f84b04b44d20b83fbfa961)
+        ;
+
+        
+    
+    
+            var circle_b29005aeef2347e7a31feba9076eea04 = L.circle(
+                [-34.40679830920912, -59.884243403892434],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 212.54, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_a951b4c4c79543a2805bc472d92eb594 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d0e6cbe08e141b4866dd7799cd06e35 = $(`<div id="html_5d0e6cbe08e141b4866dd7799cd06e35" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 10627.0</div>`)[0];
+            popup_a951b4c4c79543a2805bc472d92eb594.setContent(html_5d0e6cbe08e141b4866dd7799cd06e35);
+        
+
+        circle_b29005aeef2347e7a31feba9076eea04.bindPopup(popup_a951b4c4c79543a2805bc472d92eb594)
+        ;
+
+        
+    
+    
+            var circle_77e0dab763da4697a61fce3d57ac3295 = L.circle(
+                [-36.04129954882472, -57.65718160633698],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 121.74, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_0ea3edfdeecf46869d2964050c8b67f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d47085eae4054232875b9342248dbd29 = $(`<div id="html_d47085eae4054232875b9342248dbd29" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 6087.0</div>`)[0];
+            popup_0ea3edfdeecf46869d2964050c8b67f4.setContent(html_d47085eae4054232875b9342248dbd29);
+        
+
+        circle_77e0dab763da4697a61fce3d57ac3295.bindPopup(popup_0ea3edfdeecf46869d2964050c8b67f4)
+        ;
+
+        
+    
+    
+            var circle_e3e46a7ac9984bcaaab7fb4c00d06633 = L.circle(
+                [-35.14502523715047, -58.69077902451398],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 691.54, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_1481eff174cf45cdac78ef7b79f09621 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8ea606698794249a309ba23cb7ed21e = $(`<div id="html_c8ea606698794249a309ba23cb7ed21e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 34577.0</div>`)[0];
+            popup_1481eff174cf45cdac78ef7b79f09621.setContent(html_c8ea606698794249a309ba23cb7ed21e);
+        
+
+        circle_e3e46a7ac9984bcaaab7fb4c00d06633.bindPopup(popup_1481eff174cf45cdac78ef7b79f09621)
+        ;
+
+        
+    
+    
+            var circle_7d1499a1db9d4d218e3a73c6af680ba6 = L.circle(
+                [-34.61840392631267, -60.35392790072528],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 681.56, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_c54dd5b658884713a6173b374b6dfa0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fc95f38ca264762b1c26b50de7c1dd8 = $(`<div id="html_0fc95f38ca264762b1c26b50de7c1dd8" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 34078.0</div>`)[0];
+            popup_c54dd5b658884713a6173b374b6dfa0f.setContent(html_0fc95f38ca264762b1c26b50de7c1dd8);
+        
+
+        circle_7d1499a1db9d4d218e3a73c6af680ba6.bindPopup(popup_c54dd5b658884713a6173b374b6dfa0f)
+        ;
+
+        
+    
+    
+            var circle_a4d0ac27cb9b4b6cadd7a8282d552c38 = L.circle(
+                [-35.67602702072484, -57.90215456542778],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 541.14, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_13463ad6d1b54db4bc3ca7b69706b7b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ef57626183645d4bce78154c28c7372 = $(`<div id="html_7ef57626183645d4bce78154c28c7372" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 27057.0</div>`)[0];
+            popup_13463ad6d1b54db4bc3ca7b69706b7b9.setContent(html_7ef57626183645d4bce78154c28c7372);
+        
+
+        circle_a4d0ac27cb9b4b6cadd7a8282d552c38.bindPopup(popup_13463ad6d1b54db4bc3ca7b69706b7b9)
+        ;
+
+        
+    
+    
+            var circle_8c8187bcd98643f29eb9722395ae2eda = L.circle(
+                [-34.915708975787176, -59.95848221937728],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 961.02, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_5a2e33607cb340898b65a54085858079 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f010f4714485408b8ab3efd274172b92 = $(`<div id="html_f010f4714485408b8ab3efd274172b92" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 48051.0</div>`)[0];
+            popup_5a2e33607cb340898b65a54085858079.setContent(html_f010f4714485408b8ab3efd274172b92);
+        
+
+        circle_8c8187bcd98643f29eb9722395ae2eda.bindPopup(popup_5a2e33607cb340898b65a54085858079)
+        ;
+
+        
+    
+    
+            var circle_9f1fcaffdede4627a4af624d370396e9 = L.circle(
+                [-33.886022092066874, -61.063367492568666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 344.26, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_801556d247ef4e1caafb480349a3ebea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e79bd44ed46248e6b1c11997b59a3751 = $(`<div id="html_e79bd44ed46248e6b1c11997b59a3751" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 17213.0</div>`)[0];
+            popup_801556d247ef4e1caafb480349a3ebea.setContent(html_e79bd44ed46248e6b1c11997b59a3751);
+        
+
+        circle_9f1fcaffdede4627a4af624d370396e9.bindPopup(popup_801556d247ef4e1caafb480349a3ebea)
+        ;
+
+        
+    
+    
+            var circle_6ec7069f46ef40409782f6437615db9f = L.circle(
+                [-38.6705756906029, -61.095576387373505],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 221.66, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_027069f2870c48e78280f5ccc1919150 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f83f41c78c7f448d825a78e58486295a = $(`<div id="html_f83f41c78c7f448d825a78e58486295a" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 11083.0</div>`)[0];
+            popup_027069f2870c48e78280f5ccc1919150.setContent(html_f83f41c78c7f448d825a78e58486295a);
+        
+
+        circle_6ec7069f46ef40409782f6437615db9f.bindPopup(popup_027069f2870c48e78280f5ccc1919150)
+        ;
+
+        
+    
+    
+            var circle_97947fe1aec9447e89df568c440dfc8e = L.circle(
+                [-38.1477437843901, -61.2646589620304],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 319.58, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_b42fa40b3c7e498e9e83d8f9d43dd2da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d933ba3920664be89883ea7bd037517d = $(`<div id="html_d933ba3920664be89883ea7bd037517d" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 15979.0</div>`)[0];
+            popup_b42fa40b3c7e498e9e83d8f9d43dd2da.setContent(html_d933ba3920664be89883ea7bd037517d);
+        
+
+        circle_97947fe1aec9447e89df568c440dfc8e.bindPopup(popup_b42fa40b3c7e498e9e83d8f9d43dd2da)
+        ;
+
+        
+    
+    
+            var circle_0ee7dd31c42e4246893d83e92f2f35d3 = L.circle(
+                [-38.84974289050757, -61.835507066073454],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 768.1, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_b6f760d5e97a43b1ba5f1bd00bf6ca33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b2951eae792450a9ab0b3313d4d1ab2 = $(`<div id="html_4b2951eae792450a9ab0b3313d4d1ab2" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 38405.0</div>`)[0];
+            popup_b6f760d5e97a43b1ba5f1bd00bf6ca33.setContent(html_4b2951eae792450a9ab0b3313d4d1ab2);
+        
+
+        circle_0ee7dd31c42e4246893d83e92f2f35d3.bindPopup(popup_b6f760d5e97a43b1ba5f1bd00bf6ca33)
+        ;
+
+        
+    
+    
+            var circle_2b5b85950c084ecc893a3f744460eee7 = L.circle(
+                [-37.53255321690211, -61.88931377676976],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 551.88, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_27d8455a9f0848dda53fdb2c0b31fac9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d462bff9fae54cc49798d06e9445c265 = $(`<div id="html_d462bff9fae54cc49798d06e9445c265" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 27594.0</div>`)[0];
+            popup_27d8455a9f0848dda53fdb2c0b31fac9.setContent(html_d462bff9fae54cc49798d06e9445c265);
+        
+
+        circle_2b5b85950c084ecc893a3f744460eee7.bindPopup(popup_27d8455a9f0848dda53fdb2c0b31fac9)
+        ;
+
+        
+    
+    
+            var circle_1ac2f6d380984c968f5e4342fd241c2f = L.circle(
+                [-36.64054592432495, -61.89141712790506],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 244.92, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_65497e648c7f4604b555144297395b70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3612c04826da4c4d94da1af4a1a0941e = $(`<div id="html_3612c04826da4c4d94da1af4a1a0941e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 12246.0</div>`)[0];
+            popup_65497e648c7f4604b555144297395b70.setContent(html_3612c04826da4c4d94da1af4a1a0941e);
+        
+
+        circle_1ac2f6d380984c968f5e4342fd241c2f.bindPopup(popup_65497e648c7f4604b555144297395b70)
+        ;
+
+        
+    
+    
+            var circle_291f9a2b69284430b695dfd0f5141ac3 = L.circle(
+                [-36.39866155086842, -57.63261129924365],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 403.74, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_be3f3558137a4eac978b50b6f64c1364 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf3d8e8a1e7d4d63af4bbc6b0ff876d9 = $(`<div id="html_cf3d8e8a1e7d4d63af4bbc6b0ff876d9" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 20187.0</div>`)[0];
+            popup_be3f3558137a4eac978b50b6f64c1364.setContent(html_cf3d8e8a1e7d4d63af4bbc6b0ff876d9);
+        
+
+        circle_291f9a2b69284430b695dfd0f5141ac3.bindPopup(popup_be3f3558137a4eac978b50b6f64c1364)
+        ;
+
+        
+    
+    
+            var circle_614a5ab08cf949c0a26c440fd7d72ec4 = L.circle(
+                [-34.842220601860554, -57.97887211968175],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 866.96, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_a0c7c2d3a649412aa0f1d74ad781d019 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf9dac9965de4bea81de685c1ef75af1 = $(`<div id="html_bf9dac9965de4bea81de685c1ef75af1" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 43348.0</div>`)[0];
+            popup_a0c7c2d3a649412aa0f1d74ad781d019.setContent(html_bf9dac9965de4bea81de685c1ef75af1);
+        
+
+        circle_614a5ab08cf949c0a26c440fd7d72ec4.bindPopup(popup_a0c7c2d3a649412aa0f1d74ad781d019)
+        ;
+
+        
+    
+    
+            var circle_9ca17ed5519a415da3b5d6c7aaffaafa = L.circle(
+                [-34.32871814994043, -58.771128144658114],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2855.64, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_81a1c78a3c734ea78d732b37a49736f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5397726b73554c5c83d8522b17e3749b = $(`<div id="html_5397726b73554c5c83d8522b17e3749b" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 142782.0</div>`)[0];
+            popup_81a1c78a3c734ea78d732b37a49736f0.setContent(html_5397726b73554c5c83d8522b17e3749b);
+        
+
+        circle_9ca17ed5519a415da3b5d6c7aaffaafa.bindPopup(popup_81a1c78a3c734ea78d732b37a49736f0)
+        ;
+
+        
+    
+    
+            var circle_1a4ec5d519f14851858585bd2cbb7a6e = L.circle(
+                [-34.831209970440526, -58.47696902157432],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3571.5, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_b8f393c4b9524f8a8df88c636eda5a4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e816e4373431496f84ba2c63636aa5a9 = $(`<div id="html_e816e4373431496f84ba2c63636aa5a9" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 178575.0</div>`)[0];
+            popup_b8f393c4b9524f8a8df88c636eda5a4b.setContent(html_e816e4373431496f84ba2c63636aa5a9);
+        
+
+        circle_1a4ec5d519f14851858585bd2cbb7a6e.bindPopup(popup_b8f393c4b9524f8a8df88c636eda5a4b)
+        ;
+
+        
+    
+    
+            var circle_211c1d37bd7744999ee8422877fd1082 = L.circle(
+                [-34.295149169105784, -59.15591169930769],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 441.56, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_cded902aca2540aca15a302a8573c5bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac297333718c4f849f7cd0067ec76c92 = $(`<div id="html_ac297333718c4f849f7cd0067ec76c92" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 22078.0</div>`)[0];
+            popup_cded902aca2540aca15a302a8573c5bc.setContent(html_ac297333718c4f849f7cd0067ec76c92);
+        
+
+        circle_211c1d37bd7744999ee8422877fd1082.bindPopup(popup_cded902aca2540aca15a302a8573c5bc)
+        ;
+
+        
+    
+    
+            var circle_ed475c5d118e41be8bd218aeb1437499 = L.circle(
+                [-34.87582135300838, -58.56483953320705],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2035.16, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_a3d52cb7522148649c7d4d0922b5810c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_514e7139cd224271b96cb3ab56fcdf12 = $(`<div id="html_514e7139cd224271b96cb3ab56fcdf12" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 101758.0</div>`)[0];
+            popup_a3d52cb7522148649c7d4d0922b5810c.setContent(html_514e7139cd224271b96cb3ab56fcdf12);
+        
+
+        circle_ed475c5d118e41be8bd218aeb1437499.bindPopup(popup_a3d52cb7522148649c7d4d0922b5810c)
+        ;
+
+        
+    
+    
+            var circle_dda560511119473cbf734bda4073345e = L.circle(
+                [-34.87787298764316, -58.25863776008391],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 4959.94, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_50c51d90151348d6a535584901524b53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cebaac8f8ca471db8e2a1676444c8b9 = $(`<div id="html_5cebaac8f8ca471db8e2a1676444c8b9" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 247997.0</div>`)[0];
+            popup_50c51d90151348d6a535584901524b53.setContent(html_5cebaac8f8ca471db8e2a1676444c8b9);
+        
+
+        circle_dda560511119473cbf734bda4073345e.bindPopup(popup_50c51d90151348d6a535584901524b53)
+        ;
+
+        
+    
+    
+            var circle_2762dc4c4f804bf98b98ae6cddc87bcc = L.circle(
+                [-34.87389674967347, -62.40135347013456],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 144.16, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_42a3e2c3e200493bb50ca7f559e1ffbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39934ef1208342a2a917c13236f24a23 = $(`<div id="html_39934ef1208342a2a917c13236f24a23" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 7208.0</div>`)[0];
+            popup_42a3e2c3e200493bb50ca7f559e1ffbb.setContent(html_39934ef1208342a2a917c13236f24a23);
+        
+
+        circle_2762dc4c4f804bf98b98ae6cddc87bcc.bindPopup(popup_42a3e2c3e200493bb50ca7f559e1ffbb)
+        ;
+
+        
+    
+    
+            var circle_24c7e59fffaf408c83fcab258d751572 = L.circle(
+                [-38.202790799301674, -58.07221602779862],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 556.48, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_d7d4f37bb6da49a1b24b620d8e799c1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05ac67df86e04df8974617200be92253 = $(`<div id="html_05ac67df86e04df8974617200be92253" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 27824.0</div>`)[0];
+            popup_d7d4f37bb6da49a1b24b620d8e799c1d.setContent(html_05ac67df86e04df8974617200be92253);
+        
+
+        circle_24c7e59fffaf408c83fcab258d751572.bindPopup(popup_d7d4f37bb6da49a1b24b620d8e799c1d)
+        ;
+
+        
+    
+    
+            var circle_fe12c86564524410833ebb9fb2dc5607 = L.circle(
+                [-36.03452203522558, -60.13336125591073],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 139.88, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_ba4d813b66864825ba04b91c050de797 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcb10afccb8e4c28baed922768d2df33 = $(`<div id="html_dcb10afccb8e4c28baed922768d2df33" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 6994.0</div>`)[0];
+            popup_ba4d813b66864825ba04b91c050de797.setContent(html_dcb10afccb8e4c28baed922768d2df33);
+        
+
+        circle_fe12c86564524410833ebb9fb2dc5607.bindPopup(popup_ba4d813b66864825ba04b91c050de797)
+        ;
+
+        
+    
+    
+            var circle_a66e17acac5f479f80c77a2ca5ce50c6 = L.circle(
+                [-34.237459671314205, -61.28380062435207],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 250.28, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_3f80df6307014f50914fc0190c7b64da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e141a76093b3472cbb794b1bdd8ba030 = $(`<div id="html_e141a76093b3472cbb794b1bdd8ba030" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 12514.0</div>`)[0];
+            popup_3f80df6307014f50914fc0190c7b64da.setContent(html_e141a76093b3472cbb794b1bdd8ba030);
+        
+
+        circle_a66e17acac5f479f80c77a2ca5ce50c6.bindPopup(popup_3f80df6307014f50914fc0190c7b64da)
+        ;
+
+        
+    
+    
+            var circle_347ba25846354007bf1112d889a2f756 = L.circle(
+                [-35.834974533216, -58.698046127216024],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 263.46, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_0f6aef2f02f84d6aaa705bea4b09f830 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a1ed3cba7364ba797795272f3aa39a3 = $(`<div id="html_9a1ed3cba7364ba797795272f3aa39a3" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 13173.0</div>`)[0];
+            popup_0f6aef2f02f84d6aaa705bea4b09f830.setContent(html_9a1ed3cba7364ba797795272f3aa39a3);
+        
+
+        circle_347ba25846354007bf1112d889a2f756.bindPopup(popup_0f6aef2f02f84d6aaa705bea4b09f830)
+        ;
+
+        
+    
+    
+            var circle_ff99a01922724bde92dc498edca9ce09 = L.circle(
+                [-36.66598314914372, -57.99578410727328],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 43.1, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_a3457dba34204f2090fa95e6c4270522 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3682262454e14fa1b7bcecb17586ebec = $(`<div id="html_3682262454e14fa1b7bcecb17586ebec" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 2155.0</div>`)[0];
+            popup_a3457dba34204f2090fa95e6c4270522.setContent(html_3682262454e14fa1b7bcecb17586ebec);
+        
+
+        circle_ff99a01922724bde92dc498edca9ce09.bindPopup(popup_a3457dba34204f2090fa95e6c4270522)
+        ;
+
+        
+    
+    
+            var circle_2d294c7bafbc4bf892525b868643ff98 = L.circle(
+                [-37.355709766166264, -61.34424388030693],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 153.58, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_e8a2cde81ac14fa5ad0fbf81d6c9be4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3bad7f0539947618ba9d3a0a2252e0a = $(`<div id="html_b3bad7f0539947618ba9d3a0a2252e0a" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 7679.0</div>`)[0];
+            popup_e8a2cde81ac14fa5ad0fbf81d6c9be4b.setContent(html_b3bad7f0539947618ba9d3a0a2252e0a);
+        
+
+        circle_2d294c7bafbc4bf892525b868643ff98.bindPopup(popup_e8a2cde81ac14fa5ad0fbf81d6c9be4b)
+        ;
+
+        
+    
+    
+            var circle_fbbf9b2bd88d4d3da916d56e32d183c9 = L.circle(
+                [-34.90942583283813, -58.99587339197492],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 213.52, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_d35befb1279c4b28b448c3c17e141795 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef06931ee7014fc1b5e5bf0f0183ce64 = $(`<div id="html_ef06931ee7014fc1b5e5bf0f0183ce64" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 10676.0</div>`)[0];
+            popup_d35befb1279c4b28b448c3c17e141795.setContent(html_ef06931ee7014fc1b5e5bf0f0183ce64);
+        
+
+        circle_fbbf9b2bd88d4d3da916d56e32d183c9.bindPopup(popup_d35befb1279c4b28b448c3c17e141795)
+        ;
+
+        
+    
+    
+            var circle_7e768cca561b4d148ae63eb228c245d3 = L.circle(
+                [-36.65194668331028, -56.942272813288284],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 70.2, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_6b52c6e290cc4dd280ba37ca82457c40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0434d8759893409cb1e44cd9ff8ca23e = $(`<div id="html_0434d8759893409cb1e44cd9ff8ca23e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 3510.0</div>`)[0];
+            popup_6b52c6e290cc4dd280ba37ca82457c40.setContent(html_0434d8759893409cb1e44cd9ff8ca23e);
+        
+
+        circle_7e768cca561b4d148ae63eb228c245d3.bindPopup(popup_6b52c6e290cc4dd280ba37ca82457c40)
+        ;
+
+        
+    
+    
+            var circle_8ae1853112f34731920e6f48c1b4c6c6 = L.circle(
+                [-37.15321365360786, -57.230786631676615],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 283.28, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_1e540e3256174941adf4b37e19b3e73a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8930ee404dcb40e6a6435533f5372a15 = $(`<div id="html_8930ee404dcb40e6a6435533f5372a15" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 14164.0</div>`)[0];
+            popup_1e540e3256174941adf4b37e19b3e73a.setContent(html_8930ee404dcb40e6a6435533f5372a15);
+        
+
+        circle_8ae1853112f34731920e6f48c1b4c6c6.bindPopup(popup_1e540e3256174941adf4b37e19b3e73a)
+        ;
+
+        
+    
+    
+            var circle_1734d638e3b747f2b55471f301b52ca2 = L.circle(
+                [-35.46620207294993, -58.39000570147874],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 186.12, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_61867ec644bf4c8f897f72538299a30e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_965700b9a49141f3a64d93f85240f75d = $(`<div id="html_965700b9a49141f3a64d93f85240f75d" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 9306.0</div>`)[0];
+            popup_61867ec644bf4c8f897f72538299a30e.setContent(html_965700b9a49141f3a64d93f85240f75d);
+        
+
+        circle_1734d638e3b747f2b55471f301b52ca2.bindPopup(popup_61867ec644bf4c8f897f72538299a30e)
+        ;
+
+        
+    
+    
+            var circle_fef52c8c30374f7e82081b5502c06fec = L.circle(
+                [-34.66831323658424, -62.03974825722262],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 161.12, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_7f0d5ec225fb4691b16f89e3671f0635 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f43edc6745fc4f6bb02d9c04ca57affd = $(`<div id="html_f43edc6745fc4f6bb02d9c04ca57affd" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 8056.0</div>`)[0];
+            popup_7f0d5ec225fb4691b16f89e3671f0635.setContent(html_f43edc6745fc4f6bb02d9c04ca57affd);
+        
+
+        circle_fef52c8c30374f7e82081b5502c06fec.bindPopup(popup_7f0d5ec225fb4691b16f89e3671f0635)
+        ;
+
+        
+    
+    
+            var circle_251051cd4f0f4925878896c6951df118 = L.circle(
+                [-37.965832952137816, -57.74310444406615],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 8183.1, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_a7c1c72a436c44ebb435c6957c6272a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98e4ee2ab9e2461eb50c21786b0d23a8 = $(`<div id="html_98e4ee2ab9e2461eb50c21786b0d23a8" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 409155.0</div>`)[0];
+            popup_a7c1c72a436c44ebb435c6957c6272a5.setContent(html_98e4ee2ab9e2461eb50c21786b0d23a8);
+        
+
+        circle_251051cd4f0f4925878896c6951df118.bindPopup(popup_a7c1c72a436c44ebb435c6957c6272a5)
+        ;
+
+        
+    
+    
+            var circle_5cc8657799974d1eb81a61a2232151ab = L.circle(
+                [-34.65034949279451, -58.98795032315597],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1190.84, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_7b3add5d73e443209ac2cf4fdb3e3b26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe6945dd2db04593a8396ceb7c9987d6 = $(`<div id="html_fe6945dd2db04593a8396ceb7c9987d6" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 59542.0</div>`)[0];
+            popup_7b3add5d73e443209ac2cf4fdb3e3b26.setContent(html_fe6945dd2db04593a8396ceb7c9987d6);
+        
+
+        circle_5cc8657799974d1eb81a61a2232151ab.bindPopup(popup_7b3add5d73e443209ac2cf4fdb3e3b26)
+        ;
+
+        
+    
+    
+            var circle_5791ccf7e31d4df28272ae5c077c3029 = L.circle(
+                [-34.55265305166574, -58.564305028042476],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 5131.82, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_84f479d974b94b7090be8ba09e88515f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88117fbbbc8c4369a953073f2f594a6f = $(`<div id="html_88117fbbbc8c4369a953073f2f594a6f" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 256591.0</div>`)[0];
+            popup_84f479d974b94b7090be8ba09e88515f.setContent(html_88117fbbbc8c4369a953073f2f594a6f);
+        
+
+        circle_5791ccf7e31d4df28272ae5c077c3029.bindPopup(popup_84f479d974b94b7090be8ba09e88515f)
+        ;
+
+        
+    
+    
+            var circle_7141d24ee7e04b2499139d4b29b862f6 = L.circle(
+                [-34.99756992478199, -61.050196834729135],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 263.36, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_9bc13ff4235441bb9db3be68f1c2ca1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cbe46369c3444b39de3aeef5d2f0016 = $(`<div id="html_0cbe46369c3444b39de3aeef5d2f0016" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 13168.0</div>`)[0];
+            popup_9bc13ff4235441bb9db3be68f1c2ca1b.setContent(html_0cbe46369c3444b39de3aeef5d2f0016);
+        
+
+        circle_7141d24ee7e04b2499139d4b29b862f6.bindPopup(popup_9bc13ff4235441bb9db3be68f1c2ca1b)
+        ;
+
+        
+    
+    
+            var circle_ab5fa18efc384ecfb44a5a98f11f4468 = L.circle(
+                [-34.76853505410917, -62.95259981164345],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 403.42, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_017cad3537ea422b8b24c17704bbbf53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b45a48a7b9948bbbc77f90e29661fba = $(`<div id="html_4b45a48a7b9948bbbc77f90e29661fba" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 20171.0</div>`)[0];
+            popup_017cad3537ea422b8b24c17704bbbf53.setContent(html_4b45a48a7b9948bbbc77f90e29661fba);
+        
+
+        circle_ab5fa18efc384ecfb44a5a98f11f4468.bindPopup(popup_017cad3537ea422b8b24c17704bbbf53)
+        ;
+
+        
+    
+    
+            var circle_a021d5effff44e9bb6d9c95fc2c235c6 = L.circle(
+                [-36.89055006658581, -62.418774089609116],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 158.94, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_d912223fb17a4040b1801e969e055a61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f374e09211b4ae0873e4c0177a8ea3e = $(`<div id="html_3f374e09211b4ae0873e4c0177a8ea3e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 7947.0</div>`)[0];
+            popup_d912223fb17a4040b1801e969e055a61.setContent(html_3f374e09211b4ae0873e4c0177a8ea3e);
+        
+
+        circle_a021d5effff44e9bb6d9c95fc2c235c6.bindPopup(popup_d912223fb17a4040b1801e969e055a61)
+        ;
+
+        
+    
+    
+            var circle_faa1ab9fc3524f4488bdad254114be2b = L.circle(
+                [-36.25933122322416, -61.66009366655357],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 130.68, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_99473ae9441a4d188f60041250095a9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2108f6f3af294b7fa5db106993c8522e = $(`<div id="html_2108f6f3af294b7fa5db106993c8522e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 6534.0</div>`)[0];
+            popup_99473ae9441a4d188f60041250095a9a.setContent(html_2108f6f3af294b7fa5db106993c8522e);
+        
+
+        circle_faa1ab9fc3524f4488bdad254114be2b.bindPopup(popup_99473ae9441a4d188f60041250095a9a)
+        ;
+
+        
+    
+    
+            var circle_429e29dd76b143f5ab93cb801f9c20d7 = L.circle(
+                [-34.599214005639745, -58.64969435816419],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2371.16, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_1b6785681c2f42ef882c9aadf467e570 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df3039c1676847079982521b893abc60 = $(`<div id="html_df3039c1676847079982521b893abc60" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 118558.0</div>`)[0];
+            popup_1b6785681c2f42ef882c9aadf467e570.setContent(html_df3039c1676847079982521b893abc60);
+        
+
+        circle_429e29dd76b143f5ab93cb801f9c20d7.bindPopup(popup_1b6785681c2f42ef882c9aadf467e570)
+        ;
+
+        
+    
+    
+            var circle_57d2aa541e054d2db28a1f4972e58490 = L.circle(
+                [-34.63600181728329, -58.688758332666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2275.82, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_e81965cd1a2e44ddbb7941e081707e99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69079e2a92af446da46db5e13fd485fc = $(`<div id="html_69079e2a92af446da46db5e13fd485fc" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 113791.0</div>`)[0];
+            popup_e81965cd1a2e44ddbb7941e081707e99.setContent(html_69079e2a92af446da46db5e13fd485fc);
+        
+
+        circle_57d2aa541e054d2db28a1f4972e58490.bindPopup(popup_e81965cd1a2e44ddbb7941e081707e99)
+        ;
+
+        
+    
+    
+            var circle_1d62e86b5de84238b6f85b6d76c4fa09 = L.circle(
+                [-34.511875890339326, -58.77767109219504],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3417.06, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_ce8400545c6641769968d74c3836017d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d78be99c5254bc4b9131683b91a39ca = $(`<div id="html_4d78be99c5254bc4b9131683b91a39ca" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 170853.0</div>`)[0];
+            popup_ce8400545c6641769968d74c3836017d.setContent(html_4d78be99c5254bc4b9131683b91a39ca);
+        
+
+        circle_1d62e86b5de84238b6f85b6d76c4fa09.bindPopup(popup_ce8400545c6641769968d74c3836017d)
+        ;
+
+        
+    
+    
+            var circle_f49223ac0f814098ba009127bc3bdc55 = L.circle(
+                [-34.54612833603904, -61.00549407054887],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1272.54, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_5dd93b3fa4004deca1941dcfda3f7850 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e764e4bce3a41dfbc41f7f075f3f609 = $(`<div id="html_4e764e4bce3a41dfbc41f7f075f3f609" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 63627.0</div>`)[0];
+            popup_5dd93b3fa4004deca1941dcfda3f7850.setContent(html_4e764e4bce3a41dfbc41f7f075f3f609);
+        
+
+        circle_f49223ac0f814098ba009127bc3bdc55.bindPopup(popup_5dd93b3fa4004deca1941dcfda3f7850)
+        ;
+
+        
+    
+    
+            var circle_edb224a21a844a5eb785b48e8055ff3c = L.circle(
+                [-36.68127351988141, -56.718027808222594],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1045.22, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_fd18d39583734a46a82ee89d53fe6f6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a41ca54c524c4dffa0860d348df8821e = $(`<div id="html_a41ca54c524c4dffa0860d348df8821e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 52261.0</div>`)[0];
+            popup_fd18d39583734a46a82ee89d53fe6f6d.setContent(html_a41ca54c524c4dffa0860d348df8821e);
+        
+
+        circle_edb224a21a844a5eb785b48e8055ff3c.bindPopup(popup_fd18d39583734a46a82ee89d53fe6f6d)
+        ;
+
+        
+    
+    
+            var circle_f66866bd2b4f48499dd248e633713333 = L.circle(
+                [-34.77017387339546, -58.62544969360325],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 16162.76, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_68f40aeb93d24b7cbfaca0d79626b781 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd3203f0bdc54f4dae9c5e696d354825 = $(`<div id="html_bd3203f0bdc54f4dae9c5e696d354825" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 808138.0</div>`)[0];
+            popup_68f40aeb93d24b7cbfaca0d79626b781.setContent(html_bd3203f0bdc54f4dae9c5e696d354825);
+        
+
+        circle_f66866bd2b4f48499dd248e633713333.bindPopup(popup_68f40aeb93d24b7cbfaca0d79626b781)
+        ;
+
+        
+    
+    
+            var circle_4efe76587f8d4ea480a90c3a5490e5e8 = L.circle(
+                [-35.00349380649865, -58.01802749187936],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 8545.46, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_3cd70f68a51f4027ad333efcd6db8c32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40284e393bb4437ab5ec75a09210c4ca = $(`<div id="html_40284e393bb4437ab5ec75a09210c4ca" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 427273.0</div>`)[0];
+            popup_3cd70f68a51f4027ad333efcd6db8c32.setContent(html_40284e393bb4437ab5ec75a09210c4ca);
+        
+
+        circle_4efe76587f8d4ea480a90c3a5490e5e8.bindPopup(popup_3cd70f68a51f4027ad333efcd6db8c32)
+        ;
+
+        
+    
+    
+            var circle_a4c34aea042e466fbf049561ec445b82 = L.circle(
+                [-34.705777728198605, -58.39545273630781],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 5936.4, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_790d2c35c9614d5d8f10ec9617889097 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2e2eeb0086a4299adc2f9c92ba82166 = $(`<div id="html_a2e2eeb0086a4299adc2f9c92ba82166" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 296820.0</div>`)[0];
+            popup_790d2c35c9614d5d8f10ec9617889097.setContent(html_a2e2eeb0086a4299adc2f9c92ba82166);
+        
+
+        circle_a4c34aea042e466fbf049561ec445b82.bindPopup(popup_790d2c35c9614d5d8f10ec9617889097)
+        ;
+
+        
+    
+    
+            var circle_de93b2dcdc124933b546f31376dc1d04 = L.circle(
+                [-37.51555250897729, -60.76806267192133],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 151.66, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_4042a7b0401c4d36ab2fd3277e607a2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9d3c387d5884758a3e6745a440eeaea = $(`<div id="html_c9d3c387d5884758a3e6745a440eeaea" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 7583.0</div>`)[0];
+            popup_4042a7b0401c4d36ab2fd3277e607a2c.setContent(html_c9d3c387d5884758a3e6745a440eeaea);
+        
+
+        circle_de93b2dcdc124933b546f31376dc1d04.bindPopup(popup_4042a7b0401c4d36ab2fd3277e607a2c)
+        ;
+
+        
+    
+    
+            var circle_845ea078e6824fb382c0bb34f9116514 = L.circle(
+                [-36.01570173780584, -59.17696576553984],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 350.58, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_7a94f361b56a486e8f8709a00365fd02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_711e854fb0f5403086f2bd9fe80b8d5f = $(`<div id="html_711e854fb0f5403086f2bd9fe80b8d5f" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 17529.0</div>`)[0];
+            popup_7a94f361b56a486e8f8709a00365fd02.setContent(html_711e854fb0f5403086f2bd9fe80b8d5f);
+        
+
+        circle_845ea078e6824fb382c0bb34f9116514.bindPopup(popup_7a94f361b56a486e8f8709a00365fd02)
+        ;
+
+        
+    
+    
+            var circle_c2c6dc58e43348f099b8d076a2351bcc = L.circle(
+                [-34.49795634975866, -61.612930924540656],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 221.9, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_d12a0c9106c040879debbf304f5d2769 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ca1c41accbe4c358ad48ad3d1511568 = $(`<div id="html_6ca1c41accbe4c358ad48ad3d1511568" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 11095.0</div>`)[0];
+            popup_d12a0c9106c040879debbf304f5d2769.setContent(html_6ca1c41accbe4c358ad48ad3d1511568);
+        
+
+        circle_c2c6dc58e43348f099b8d076a2351bcc.bindPopup(popup_d12a0c9106c040879debbf304f5d2769)
+        ;
+
+        
+    
+    
+            var circle_60a13d7091304cc0b28b3db3f6e82a0b = L.circle(
+                [-35.07038488332599, -61.68276182001225],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 574.76, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_48f9e43a58734c9ca062f6f173770221 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_528d9fc9e7ed4bf18dba0f9f7c26d7d0 = $(`<div id="html_528d9fc9e7ed4bf18dba0f9f7c26d7d0" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 28738.0</div>`)[0];
+            popup_48f9e43a58734c9ca062f6f173770221.setContent(html_528d9fc9e7ed4bf18dba0f9f7c26d7d0);
+        
+
+        circle_60a13d7091304cc0b28b3db3f6e82a0b.bindPopup(popup_48f9e43a58734c9ca062f6f173770221)
+        ;
+
+        
+    
+    
+            var circle_93fa078f57e644168d8e6268ad039730 = L.circle(
+                [-38.089716014188056, -58.69396400493998],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 239.36, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_389f7fedf491411e95a85bf40fefcd0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd58962e5cd6478796e573947374dc4f = $(`<div id="html_bd58962e5cd6478796e573947374dc4f" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 11968.0</div>`)[0];
+            popup_389f7fedf491411e95a85bf40fefcd0a.setContent(html_bd58962e5cd6478796e573947374dc4f);
+        
+
+        circle_93fa078f57e644168d8e6268ad039730.bindPopup(popup_389f7fedf491411e95a85bf40fefcd0a)
+        ;
+
+        
+    
+    
+            var circle_fa0fbbd05d1146498b42674555183003 = L.circle(
+                [-35.219559852906215, -59.14580712279637],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 511.22, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_b7b0da9d7bbd40498c9b4881916de418 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0072e317ca194b38baa54860187b3277 = $(`<div id="html_0072e317ca194b38baa54860187b3277" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 25561.0</div>`)[0];
+            popup_b7b0da9d7bbd40498c9b4881916de418.setContent(html_0072e317ca194b38baa54860187b3277);
+        
+
+        circle_fa0fbbd05d1146498b42674555183003.bindPopup(popup_b7b0da9d7bbd40498c9b4881916de418)
+        ;
+
+        
+    
+    
+            var circle_94438cdd5c594749a5401df9c584940b = L.circle(
+                [-34.755464338669846, -58.42408292914761],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 7745.14, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_fb9ae8c98ac847d6b28a993c7cb6f3f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48e5635c54104aaca3d0b889423100df = $(`<div id="html_48e5635c54104aaca3d0b889423100df" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 387257.0</div>`)[0];
+            popup_fb9ae8c98ac847d6b28a993c7cb6f3f1.setContent(html_48e5635c54104aaca3d0b889423100df);
+        
+
+        circle_94438cdd5c594749a5401df9c584940b.bindPopup(popup_fb9ae8c98ac847d6b28a993c7cb6f3f1)
+        ;
+
+        
+    
+    
+            var circle_d1a7122012f74e7ea55eeb146380a533 = L.circle(
+                [-34.56761946393546, -59.15851235298887],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1453.42, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_dbba2a244c3144328893d12194675b68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0d0954ea8ff4387b6246ea6512b2658 = $(`<div id="html_d0d0954ea8ff4387b6246ea6512b2658" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 72671.0</div>`)[0];
+            popup_dbba2a244c3144328893d12194675b68.setContent(html_d0d0954ea8ff4387b6246ea6512b2658);
+        
+
+        circle_d1a7122012f74e7ea55eeb146380a533.bindPopup(popup_dbba2a244c3144328893d12194675b68)
+        ;
+
+        
+    
+    
+            var circle_7819cc15f36f473894b75724318954e4 = L.circle(
+                [-35.18494012253495, -57.6862232597599],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 237.0, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_b3a2ea12572b4fc4bcafb6591dba472c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8f9faf32a49456c8e48698d34a60d2b = $(`<div id="html_a8f9faf32a49456c8e48698d34a60d2b" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 11850.0</div>`)[0];
+            popup_b3a2ea12572b4fc4bcafb6591dba472c.setContent(html_a8f9faf32a49456c8e48698d34a60d2b);
+        
+
+        circle_7819cc15f36f473894b75724318954e4.bindPopup(popup_b3a2ea12572b4fc4bcafb6591dba472c)
+        ;
+
+        
+    
+    
+            var circle_3c57213bd601425180dc6f26aa91c58d = L.circle(
+                [-36.88657283643685, -57.58617315001118],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 166.68, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_5294249494004d1c9893f70b8cff85a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d5b8dc47c7b4fec88737d0cfcb5fa9a = $(`<div id="html_6d5b8dc47c7b4fec88737d0cfcb5fa9a" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 8334.0</div>`)[0];
+            popup_5294249494004d1c9893f70b8cff85a8.setContent(html_6d5b8dc47c7b4fec88737d0cfcb5fa9a);
+        
+
+        circle_3c57213bd601425180dc6f26aa91c58d.bindPopup(popup_5294249494004d1c9893f70b8cff85a8)
+        ;
+
+        
+    
+    
+            var circle_214fce41ee2348ae803933620f16bd18 = L.circle(
+                [-34.48730382862583, -58.712132995237155],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 4274.3, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_47ff72e41e584410b647e89fb15e68e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4987e730cf94e229fd9b79e81997688 = $(`<div id="html_b4987e730cf94e229fd9b79e81997688" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 213715.0</div>`)[0];
+            popup_47ff72e41e584410b647e89fb15e68e5.setContent(html_b4987e730cf94e229fd9b79e81997688);
+        
+
+        circle_214fce41ee2348ae803933620f16bd18.bindPopup(popup_47ff72e41e584410b647e89fb15e68e5)
+        ;
+
+        
+    
+    
+            var circle_025ce00eb6884ef9b838b03503e36643 = L.circle(
+                [-37.498319802207725, -57.64380475290154],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 386.72, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_436392c75fef46f4b55804931e54924c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1039346fb5e4c529648f7b838d65545 = $(`<div id="html_c1039346fb5e4c529648f7b838d65545" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 19336.0</div>`)[0];
+            popup_436392c75fef46f4b55804931e54924c.setContent(html_c1039346fb5e4c529648f7b838d65545);
+        
+
+        circle_025ce00eb6884ef9b838b03503e36643.bindPopup(popup_436392c75fef46f4b55804931e54924c)
+        ;
+
+        
+    
+    
+            var circle_460ef1e75146409dac1e05fe101452bd = L.circle(
+                [-34.813719983340356, -58.848063432717346],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 686.84, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_95c974475fa94116badd94b688995499 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3f22fb1cc5d4cc2a6bb7fa41753579a = $(`<div id="html_a3f22fb1cc5d4cc2a6bb7fa41753579a" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 34342.0</div>`)[0];
+            popup_95c974475fa94116badd94b688995499.setContent(html_a3f22fb1cc5d4cc2a6bb7fa41753579a);
+        
+
+        circle_460ef1e75146409dac1e05fe101452bd.bindPopup(popup_95c974475fa94116badd94b688995499)
+        ;
+
+        
+    
+    
+            var circle_e5fbafcf68e34405a17947498abbbbc6 = L.circle(
+                [-34.69719443262973, -59.420811983050676],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 908.4, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_f1c02c168af143a58b9ad61b663bbacb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4ffc7f77193499e94d20581955d0e08 = $(`<div id="html_c4ffc7f77193499e94d20581955d0e08" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 45420.0</div>`)[0];
+            popup_f1c02c168af143a58b9ad61b663bbacb.setContent(html_c4ffc7f77193499e94d20581955d0e08);
+        
+
+        circle_e5fbafcf68e34405a17947498abbbbc6.bindPopup(popup_f1c02c168af143a58b9ad61b663bbacb)
+        ;
+
+        
+    
+    
+            var circle_ca338e1030ca4295a3e77dbc650d09e1 = L.circle(
+                [-34.71088677932579, -58.74187776349705],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 6392.36, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_d362a9f2ba934274a5e44dd8e700a451 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13b7069895ad4d6eadf77904a75daa21 = $(`<div id="html_13b7069895ad4d6eadf77904a75daa21" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 319618.0</div>`)[0];
+            popup_d362a9f2ba934274a5e44dd8e700a451.setContent(html_13b7069895ad4d6eadf77904a75daa21);
+        
+
+        circle_ca338e1030ca4295a3e77dbc650d09e1.bindPopup(popup_d362a9f2ba934274a5e44dd8e700a451)
+        ;
+
+        
+    
+    
+            var circle_f70a5bb7b36844f88410f3326d17871a = L.circle(
+                [-35.5103702937622, -58.76946349856931],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 295.14, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_457b836887374673a04389da6cbe9c13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8f69949c5894a0a95cf3a238d0e27ee = $(`<div id="html_a8f69949c5894a0a95cf3a238d0e27ee" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 14757.0</div>`)[0];
+            popup_457b836887374673a04389da6cbe9c13.setContent(html_a8f69949c5894a0a95cf3a238d0e27ee);
+        
+
+        circle_f70a5bb7b36844f88410f3326d17871a.bindPopup(popup_457b836887374673a04389da6cbe9c13)
+        ;
+
+        
+    
+    
+            var circle_7828127c6d2d4f72b2ddcbda4117528a = L.circle(
+                [-38.9625503594866, -61.29051435130616],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 120.62, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_33a8a7fea7e347059b0d3f2e5516213f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6541d22d632641d4aca1e634ad652d18 = $(`<div id="html_6541d22d632641d4aca1e634ad652d18" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 6031.0</div>`)[0];
+            popup_33a8a7fea7e347059b0d3f2e5516213f.setContent(html_6541d22d632641d4aca1e634ad652d18);
+        
+
+        circle_7828127c6d2d4f72b2ddcbda4117528a.bindPopup(popup_33a8a7fea7e347059b0d3f2e5516213f)
+        ;
+
+        
+    
+    
+            var circle_3c4eb446a1314f4ab3986895179ce6f6 = L.circle(
+                [-34.610617117852584, -58.81092326605474],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 5351.5, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_4f3ca826aa6c463a9318b96f08735987 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55f6da94a88e4a4bb865599043eb1417 = $(`<div id="html_55f6da94a88e4a4bb865599043eb1417" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 267575.0</div>`)[0];
+            popup_4f3ca826aa6c463a9318b96f08735987.setContent(html_55f6da94a88e4a4bb865599043eb1417);
+        
+
+        circle_3c4eb446a1314f4ab3986895179ce6f6.bindPopup(popup_4f3ca826aa6c463a9318b96f08735987)
+        ;
+
+        
+    
+    
+            var circle_ce7b5c1f75e940d5bbb74257af4a5121 = L.circle(
+                [-34.64914106587939, -58.619843346156244],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 4303.68, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_ee3e48343b9046c89f3404c7f76885fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2633e7eecf9d41718ae195bb9a32f2f2 = $(`<div id="html_2633e7eecf9d41718ae195bb9a32f2f2" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 215184.0</div>`)[0];
+            popup_ee3e48343b9046c89f3404c7f76885fc.setContent(html_2633e7eecf9d41718ae195bb9a32f2f2);
+        
+
+        circle_ce7b5c1f75e940d5bbb74257af4a5121.bindPopup(popup_ee3e48343b9046c89f3404c7f76885fc)
+        ;
+
+        
+    
+    
+            var circle_0cf3c3f978ef46ab8253e39e38979b60 = L.circle(
+                [-35.03040835818785, -59.42978547914947],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 238.24, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_9340f661b9be481eb69bcc8110b74e2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f797bf654acf4ad1a110ccb66690eb51 = $(`<div id="html_f797bf654acf4ad1a110ccb66690eb51" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 11912.0</div>`)[0];
+            popup_9340f661b9be481eb69bcc8110b74e2c.setContent(html_f797bf654acf4ad1a110ccb66690eb51);
+        
+
+        circle_0cf3c3f978ef46ab8253e39e38979b60.bindPopup(popup_9340f661b9be481eb69bcc8110b74e2c)
+        ;
+
+        
+    
+    
+            var circle_5645422bf2e1440f8b4bbe6155c48f99 = L.circle(
+                [-38.255513841799676, -59.16738326159135],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1268.18, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_a11ff24c9f8247fc8529fdb49fb4e76c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebdaadda31d74dee9b1b2793b0c3d372 = $(`<div id="html_ebdaadda31d74dee9b1b2793b0c3d372" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 63409.0</div>`)[0];
+            popup_a11ff24c9f8247fc8529fdb49fb4e76c.setContent(html_ebdaadda31d74dee9b1b2793b0c3d372);
+        
+
+        circle_5645422bf2e1440f8b4bbe6155c48f99.bindPopup(popup_a11ff24c9f8247fc8529fdb49fb4e76c)
+        ;
+
+        
+    
+    
+            var circle_49a5416e6d2a47eb8875e5799c21ac35 = L.circle(
+                [-36.85670121295855, -60.67073493724004],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1515.18, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_c610bd783c104e3aba5fb6af623e7405 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91cd0c02bef94debab0db675e744846e = $(`<div id="html_91cd0c02bef94debab0db675e744846e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 75759.0</div>`)[0];
+            popup_c610bd783c104e3aba5fb6af623e7405.setContent(html_91cd0c02bef94debab0db675e744846e);
+        
+
+        circle_49a5416e6d2a47eb8875e5799c21ac35.bindPopup(popup_c610bd783c104e3aba5fb6af623e7405)
+        ;
+
+        
+    
+    
+            var circle_2d69756e982f4c94b682f1518bf9e93e = L.circle(
+                [-40.19637450871439, -62.856836086377996],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 426.86, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_87f6ca230f0341d8abe5a967ad4254c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e77616510f04aa59c72b3667f301d90 = $(`<div id="html_2e77616510f04aa59c72b3667f301d90" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 21343.0</div>`)[0];
+            popup_87f6ca230f0341d8abe5a967ad4254c6.setContent(html_2e77616510f04aa59c72b3667f301d90);
+        
+
+        circle_2d69756e982f4c94b682f1518bf9e93e.bindPopup(popup_87f6ca230f0341d8abe5a967ad4254c6)
+        ;
+
+        
+    
+    
+            var circle_e6e8d3d5896e4fe9944514fb2ea6b345 = L.circle(
+                [-35.88338334385796, -61.92719851569946],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 550.68, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_793ab5cdeae645dab66bfc80d30b1c83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b254ebcdbcc04bf29123c9bba8ec07fc = $(`<div id="html_b254ebcdbcc04bf29123c9bba8ec07fc" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 27534.0</div>`)[0];
+            popup_793ab5cdeae645dab66bfc80d30b1c83.setContent(html_b254ebcdbcc04bf29123c9bba8ec07fc);
+        
+
+        circle_e6e8d3d5896e4fe9944514fb2ea6b345.bindPopup(popup_793ab5cdeae645dab66bfc80d30b1c83)
+        ;
+
+        
+    
+    
+            var circle_ad04b9a2c3cf42519717b5b88137f252 = L.circle(
+                [-36.27119598034292, -63.224983892121095],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 84.14, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_7ddd77327d2e452dbc9ff1e56c074455 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afc0f2d1d2c240699ed8da9f8d01e172 = $(`<div id="html_afc0f2d1d2c240699ed8da9f8d01e172" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 4207.0</div>`)[0];
+            popup_7ddd77327d2e452dbc9ff1e56c074455.setContent(html_afc0f2d1d2c240699ed8da9f8d01e172);
+        
+
+        circle_ad04b9a2c3cf42519717b5b88137f252.bindPopup(popup_7ddd77327d2e452dbc9ff1e56c074455)
+        ;
+
+        
+    
+    
+            var circle_766b78b4d13a4288a98fb848f958d8e2 = L.circle(
+                [-33.83581553536687, -60.545074868956235],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1419.44, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_38b3342e7a3044d8b0a3b1f0e4f2b39c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63c32a6208b9410bb864c5d3bc5d9872 = $(`<div id="html_63c32a6208b9410bb864c5d3bc5d9872" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 70972.0</div>`)[0];
+            popup_38b3342e7a3044d8b0a3b1f0e4f2b39c.setContent(html_63c32a6208b9410bb864c5d3bc5d9872);
+        
+
+        circle_766b78b4d13a4288a98fb848f958d8e2.bindPopup(popup_38b3342e7a3044d8b0a3b1f0e4f2b39c)
+        ;
+
+        
+    
+    
+            var circle_aaad090d4341477ebddf16eaa933fc7b = L.circle(
+                [-36.20235126359665, -58.34089701942302],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 55.98, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_4aa0a52019b946118ffca9e227877edc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd1aed0289f74c398dd92dec8be1e297 = $(`<div id="html_fd1aed0289f74c398dd92dec8be1e297" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 2799.0</div>`)[0];
+            popup_4aa0a52019b946118ffca9e227877edc.setContent(html_fd1aed0289f74c398dd92dec8be1e297);
+        
+
+        circle_aaad090d4341477ebddf16eaa933fc7b.bindPopup(popup_4aa0a52019b946118ffca9e227877edc)
+        ;
+
+        
+    
+    
+            var circle_e6d65d8c864e4a0386afb5e634bfa458 = L.circle(
+                [-34.4481990222743, -58.903441390778475],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3850.82, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_06597e3293ed410fa9f58f5ec6718c17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5966e2ac0bec4c9383f77620dadfcf3b = $(`<div id="html_5966e2ac0bec4c9383f77620dadfcf3b" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 192541.0</div>`)[0];
+            popup_06597e3293ed410fa9f58f5ec6718c17.setContent(html_5966e2ac0bec4c9383f77620dadfcf3b);
+        
+
+        circle_e6d65d8c864e4a0386afb5e634bfa458.bindPopup(popup_06597e3293ed410fa9f58f5ec6718c17)
+        ;
+
+        
+    
+    
+            var circle_cceb6edbcb144c18a2c0cb4953e29b35 = L.circle(
+                [-37.10999478787351, -56.86976363692978],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 352.72, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_8e7b45cbb733478d9f1f1f5ca149901a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42f7d5d7a1b6443f84ad38664136ba0f = $(`<div id="html_42f7d5d7a1b6443f84ad38664136ba0f" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 17636.0</div>`)[0];
+            popup_8e7b45cbb733478d9f1f1f5ca149901a.setContent(html_42f7d5d7a1b6443f84ad38664136ba0f);
+        
+
+        circle_cceb6edbcb144c18a2c0cb4953e29b35.bindPopup(popup_8e7b45cbb733478d9f1f1f5ca149901a)
+        ;
+
+        
+    
+    
+            var circle_9069c217ac9340b7b8203467c541fffe = L.circle(
+                [-34.92983130222073, -58.39809124321751],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 987.9, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_819d90b4c0784dc08faff610206bd469 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14ed144872e642b6a7e0d3f0823dca2e = $(`<div id="html_14ed144872e642b6a7e0d3f0823dca2e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 49395.0</div>`)[0];
+            popup_819d90b4c0784dc08faff610206bd469.setContent(html_14ed144872e642b6a7e0d3f0823dca2e);
+        
+
+        circle_9069c217ac9340b7b8203467c541fffe.bindPopup(popup_819d90b4c0784dc08faff610206bd469)
+        ;
+
+        
+    
+    
+            var circle_8e406eb9cd8f419b82ce5f781f44d6ee = L.circle(
+                [-35.426368490496365, -57.39945353519266],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 150.82, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_1dbf77b09ed14935bfc85313e521a102 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc69b4794db4486ea8f50d0c57882639 = $(`<div id="html_fc69b4794db4486ea8f50d0c57882639" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 7541.0</div>`)[0];
+            popup_1dbf77b09ed14935bfc85313e521a102.setContent(html_fc69b4794db4486ea8f50d0c57882639);
+        
+
+        circle_8e406eb9cd8f419b82ce5f781f44d6ee.bindPopup(popup_1dbf77b09ed14935bfc85313e521a102)
+        ;
+
+        
+    
+    
+            var circle_88d662b0489d4fd18cde57cee23b88c7 = L.circle(
+                [-38.07419629875245, -63.056998367462484],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 230.28, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_c603cef1eaa04f34ab7b21460283a1f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccd6c247c6ed4bf096d4ea2d7d1c8cde = $(`<div id="html_ccd6c247c6ed4bf096d4ea2d7d1c8cde" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 11514.0</div>`)[0];
+            popup_c603cef1eaa04f34ab7b21460283a1f7.setContent(html_ccd6c247c6ed4bf096d4ea2d7d1c8cde);
+        
+
+        circle_88d662b0489d4fd18cde57cee23b88c7.bindPopup(popup_c603cef1eaa04f34ab7b21460283a1f7)
+        ;
+
+        
+    
+    
+            var circle_3d7934bf19e4404fad9cd676747e835e = L.circle(
+                [-34.73505049313406, -58.27672835226017],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 7121.98, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_a68d72f16e35411d9c53ed5e9a43cc6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a3169dced0a454183f6ff28e5e1fb66 = $(`<div id="html_8a3169dced0a454183f6ff28e5e1fb66" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 356099.0</div>`)[0];
+            popup_a68d72f16e35411d9c53ed5e9a43cc6e.setContent(html_8a3169dced0a454183f6ff28e5e1fb66);
+        
+
+        circle_3d7934bf19e4404fad9cd676747e835e.bindPopup(popup_a68d72f16e35411d9c53ed5e9a43cc6e)
+        ;
+
+        
+    
+    
+            var circle_d961fbcc5e2a4a49addae1d8d7f41c20 = L.circle(
+                [-33.587297239032274, -60.05748459049555],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 483.48, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_87d08f2658ae4959bdcc4971857ef785 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57fc545083854ece80d10f50323a3946 = $(`<div id="html_57fc545083854ece80d10f50323a3946" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 24174.0</div>`)[0];
+            popup_87d08f2658ae4959bdcc4971857ef785.setContent(html_57fc545083854ece80d10f50323a3946);
+        
+
+        circle_d961fbcc5e2a4a49addae1d8d7f41c20.bindPopup(popup_87d08f2658ae4959bdcc4971857ef785)
+        ;
+
+        
+    
+    
+            var circle_af7a97443af54a3f951c3874fa30d215 = L.circle(
+                [-36.572250952522566, -58.9444061280759],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 219.62, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_54e781e10b5849249e7a0b77c51572eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b883ccdaa8549458a737c2473ef8baa = $(`<div id="html_8b883ccdaa8549458a737c2473ef8baa" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 10981.0</div>`)[0];
+            popup_54e781e10b5849249e7a0b77c51572eb.setContent(html_8b883ccdaa8549458a737c2473ef8baa);
+        
+
+        circle_af7a97443af54a3f951c3874fa30d215.bindPopup(popup_54e781e10b5849249e7a0b77c51572eb)
+        ;
+
+        
+    
+    
+            var circle_d33816297e18466c99a5a269a9f5c1ec = L.circle(
+                [-35.5808773903658, -63.094039174904125],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 235.28, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_144f742f703745e68cf65b83348c61bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8066f0dbf144edf8f1f252fd68d30b9 = $(`<div id="html_a8066f0dbf144edf8f1f252fd68d30b9" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 11764.0</div>`)[0];
+            popup_144f742f703745e68cf65b83348c61bc.setContent(html_a8066f0dbf144edf8f1f252fd68d30b9);
+        
+
+        circle_d33816297e18466c99a5a269a9f5c1ec.bindPopup(popup_144f742f703745e68cf65b83348c61bc)
+        ;
+
+        
+    
+    
+            var circle_4d40536719f74c88a5ab00580bd1b44d = L.circle(
+                [-34.19260359526357, -60.78797065685761],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 325.66, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_e0c41d92762c4d7da06ff0c3c818428b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3b2eb808dfa4ea98ba7be5f2bb044d6 = $(`<div id="html_c3b2eb808dfa4ea98ba7be5f2bb044d6" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 16283.0</div>`)[0];
+            popup_e0c41d92762c4d7da06ff0c3c818428b.setContent(html_c3b2eb808dfa4ea98ba7be5f2bb044d6);
+        
+
+        circle_4d40536719f74c88a5ab00580bd1b44d.bindPopup(popup_e0c41d92762c4d7da06ff0c3c818428b)
+        ;
+
+        
+    
+    
+            var circle_d98208ee44944d699206d1f53f7ea761 = L.circle(
+                [-35.48111107144916, -59.359594051353874],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 172.26, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_3f3c8abbaeae4d2b9425b52d952444e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96b6e684c6064b68838c853c1b40bda1 = $(`<div id="html_96b6e684c6064b68838c853c1b40bda1" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 8613.0</div>`)[0];
+            popup_3f3c8abbaeae4d2b9425b52d952444e2.setContent(html_96b6e684c6064b68838c853c1b40bda1);
+        
+
+        circle_d98208ee44944d699206d1f53f7ea761.bindPopup(popup_3f3c8abbaeae4d2b9425b52d952444e2)
+        ;
+
+        
+    
+    
+            var circle_ea914a08b8364a57b1b6c52412260ddb = L.circle(
+                [-37.771055016099574, -62.43514529746744],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 286.46, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_1df71afde13044d7889d5797a17f7bdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9d6f0dc0c9a431aaa78d8094605ad1e = $(`<div id="html_c9d6f0dc0c9a431aaa78d8094605ad1e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 14323.0</div>`)[0];
+            popup_1df71afde13044d7889d5797a17f7bdb.setContent(html_c9d6f0dc0c9a431aaa78d8094605ad1e);
+        
+
+        circle_ea914a08b8364a57b1b6c52412260ddb.bindPopup(popup_1df71afde13044d7889d5797a17f7bdb)
+        ;
+
+        
+    
+    
+            var circle_d60df4e727c4417abbfeecc681a76a11 = L.circle(
+                [-35.67659666807047, -59.7037033012566],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 444.28, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_59ba28d9ffd647f9870c97b8cd4fe4c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88304f4b3b91424190f066c84a65c06c = $(`<div id="html_88304f4b3b91424190f066c84a65c06c" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 22214.0</div>`)[0];
+            popup_59ba28d9ffd647f9870c97b8cd4fe4c6.setContent(html_88304f4b3b91424190f066c84a65c06c);
+        
+
+        circle_d60df4e727c4417abbfeecc681a76a11.bindPopup(popup_59ba28d9ffd647f9870c97b8cd4fe4c6)
+        ;
+
+        
+    
+    
+            var circle_126ebb469693442fa794373bc145746d = L.circle(
+                [-36.67101375531671, -63.049125980333415],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 120.42, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_cb677a84dca642b886939836411e0e35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5d64114c3db42a08607cc6f5136547e = $(`<div id="html_b5d64114c3db42a08607cc6f5136547e" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 6021.0</div>`)[0];
+            popup_cb677a84dca642b886939836411e0e35.setContent(html_b5d64114c3db42a08607cc6f5136547e);
+        
+
+        circle_126ebb469693442fa794373bc145746d.bindPopup(popup_cb677a84dca642b886939836411e0e35)
+        ;
+
+        
+    
+    
+            var circle_0b53bffcdbb74ec1b88a134f00d0d70f = L.circle(
+                [-34.27083505256962, -60.30518256634497],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 448.36, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_c58752ed149b4dfc9c7f8f25ca43768f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_995562c9da0d48bf8589711a12284725 = $(`<div id="html_995562c9da0d48bf8589711a12284725" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 22418.0</div>`)[0];
+            popup_c58752ed149b4dfc9c7f8f25ca43768f.setContent(html_995562c9da0d48bf8589711a12284725);
+        
+
+        circle_0b53bffcdbb74ec1b88a134f00d0d70f.bindPopup(popup_c58752ed149b4dfc9c7f8f25ca43768f)
+        ;
+
+        
+    
+    
+            var circle_e6949383d9f34e27b1e2a561d19634db = L.circle(
+                [-34.437785158684854, -59.47329388404813],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 325.48, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_9bd74a664e1e4d55a9677b306ccaa7da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c57c402d5754468bb73fc8fffd7ed95 = $(`<div id="html_4c57c402d5754468bb73fc8fffd7ed95" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 16274.0</div>`)[0];
+            popup_9bd74a664e1e4d55a9677b306ccaa7da.setContent(html_4c57c402d5754468bb73fc8fffd7ed95);
+        
+
+        circle_e6949383d9f34e27b1e2a561d19634db.bindPopup(popup_9bd74a664e1e4d55a9677b306ccaa7da)
+        ;
+
+        
+    
+    
+            var circle_b180406479514a13a8a6e03dfba311a7 = L.circle(
+                [-34.22065916855464, -59.519379221228554],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 342.08, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_b1d7b4ad2051480ba97356c78312a8a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7185f841996a42ffae8c302961e31b8d = $(`<div id="html_7185f841996a42ffae8c302961e31b8d" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 17104.0</div>`)[0];
+            popup_b1d7b4ad2051480ba97356c78312a8a3.setContent(html_7185f841996a42ffae8c302961e31b8d);
+        
+
+        circle_b180406479514a13a8a6e03dfba311a7.bindPopup(popup_b1d7b4ad2051480ba97356c78312a8a3)
+        ;
+
+        
+    
+    
+            var circle_ff834292ebbd49f4b1d4a4ab246c1327 = L.circle(
+                [-38.3886800866896, -59.58661482175839],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 117.64, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_90e6d952acb849688dcc18ec97fbc7ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66402b3c747248e2a2e18258177a1c59 = $(`<div id="html_66402b3c747248e2a2e18258177a1c59" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 5882.0</div>`)[0];
+            popup_90e6d952acb849688dcc18ec97fbc7ef.setContent(html_66402b3c747248e2a2e18258177a1c59);
+        
+
+        circle_ff834292ebbd49f4b1d4a4ab246c1327.bindPopup(popup_90e6d952acb849688dcc18ec97fbc7ef)
+        ;
+
+        
+    
+    
+            var circle_5d70ce730b234af6a0d5061ce2ff0d2e = L.circle(
+                [-34.14973159732312, -58.5538608444721],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2021.6, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_cb868a9d20414f7087d12c58278d0b6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f6a28b463b74c60bb841d288f5eb448 = $(`<div id="html_2f6a28b463b74c60bb841d288f5eb448" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 101080.0</div>`)[0];
+            popup_cb868a9d20414f7087d12c58278d0b6c.setContent(html_2f6a28b463b74c60bb841d288f5eb448);
+        
+
+        circle_5d70ce730b234af6a0d5061ce2ff0d2e.bindPopup(popup_cb868a9d20414f7087d12c58278d0b6c)
+        ;
+
+        
+    
+    
+            var circle_d4d77a2a304744688217f7ae0e9f8fe6 = L.circle(
+                [-34.48690333045639, -58.53727698912673],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 4309.5, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_0f4eaff7005d45b39c69310d787bd6d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48306653b145457cb55d5e62fdf69370 = $(`<div id="html_48306653b145457cb55d5e62fdf69370" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 215475.0</div>`)[0];
+            popup_0f4eaff7005d45b39c69310d787bd6d4.setContent(html_48306653b145457cb55d5e62fdf69370);
+        
+
+        circle_d4d77a2a304744688217f7ae0e9f8fe6.bindPopup(popup_0f4eaff7005d45b39c69310d787bd6d4)
+        ;
+
+        
+    
+    
+            var circle_c8de5ea5044440c3ac9466529cf8e330 = L.circle(
+                [-34.55209196542869, -58.69170551934593],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3729.58, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_14278374f4184fcb87d61755775953b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc387742e98c49738665179da9f99480 = $(`<div id="html_bc387742e98c49738665179da9f99480" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 186479.0</div>`)[0];
+            popup_14278374f4184fcb87d61755775953b1.setContent(html_bc387742e98c49738665179da9f99480);
+        
+
+        circle_c8de5ea5044440c3ac9466529cf8e330.bindPopup(popup_14278374f4184fcb87d61755775953b1)
+        ;
+
+        
+    
+    
+            var circle_67bfab43493f4447846735c397a17016 = L.circle(
+                [-33.48255413409622, -60.292953731646236],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1920.54, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_7efe32d7f6fb4d098ad406df4cc224b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f6ddc500a15408cafc495804c034557 = $(`<div id="html_6f6ddc500a15408cafc495804c034557" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 96027.0</div>`)[0];
+            popup_7efe32d7f6fb4d098ad406df4cc224b9.setContent(html_6f6ddc500a15408cafc495804c034557);
+        
+
+        circle_67bfab43493f4447846735c397a17016.bindPopup(popup_7efe32d7f6fb4d098ad406df4cc224b9)
+        ;
+
+        
+    
+    
+            var circle_03ec32b9b2bb4079b03c14e1df01ca77 = L.circle(
+                [-33.78194258500083, -59.7825917631923],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 840.56, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_27c0996616704c8997e3d61a36ec6022 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0209130fed5b470b84e72cf21306fcd7 = $(`<div id="html_0209130fed5b470b84e72cf21306fcd7" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 42028.0</div>`)[0];
+            popup_27c0996616704c8997e3d61a36ec6022.setContent(html_0209130fed5b470b84e72cf21306fcd7);
+        
+
+        circle_03ec32b9b2bb4079b03c14e1df01ca77.bindPopup(popup_27c0996616704c8997e3d61a36ec6022)
+        ;
+
+        
+    
+    
+            var circle_17c030aeafd84e49b346ce458175cacd = L.circle(
+                [-35.07045963991679, -58.43192196021727],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 848.52, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_319f9e9202c740dd97254a25226d38df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cd554bc01d0427b8814b31457334182 = $(`<div id="html_5cd554bc01d0427b8814b31457334182" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 42426.0</div>`)[0];
+            popup_319f9e9202c740dd97254a25226d38df.setContent(html_5cd554bc01d0427b8814b31457334182);
+        
+
+        circle_17c030aeafd84e49b346ce458175cacd.bindPopup(popup_319f9e9202c740dd97254a25226d38df)
+        ;
+
+        
+    
+    
+            var circle_147a91fbc823423fbb52027c69044bac = L.circle(
+                [-34.74856296825066, -59.70347374378682],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 157.56, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_7065b2037af5443281a319ea8c4056c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e92b7894aa984a088c4d214f14f4ff36 = $(`<div id="html_e92b7894aa984a088c4d214f14f4ff36" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 7878.0</div>`)[0];
+            popup_7065b2037af5443281a319ea8c4056c3.setContent(html_e92b7894aa984a088c4d214f14f4ff36);
+        
+
+        circle_147a91fbc823423fbb52027c69044bac.bindPopup(popup_7065b2037af5443281a319ea8c4056c3)
+        ;
+
+        
+    
+    
+            var circle_a212df3b96da41cd9fc0e1acc1998063 = L.circle(
+                [-37.33565541830128, -59.18180557587904],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1698.04, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_62712212a556452f873810ef49f37d97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dca7ef5656204ef2b7ab203a31aee286 = $(`<div id="html_dca7ef5656204ef2b7ab203a31aee286" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 84902.0</div>`)[0];
+            popup_62712212a556452f873810ef49f37d97.setContent(html_dca7ef5656204ef2b7ab203a31aee286);
+        
+
+        circle_a212df3b96da41cd9fc0e1acc1998063.bindPopup(popup_62712212a556452f873810ef49f37d97)
+        ;
+
+        
+    
+    
+            var circle_a1a4e3dd2a94420ea1ca14a7f70339e6 = L.circle(
+                [-36.34713831085846, -60.13088043819324],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 141.28, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_7edd0e3b48654e9e8c1f10c7fbba7248 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acd0120dd833479283b5983b8aa62b41 = $(`<div id="html_acd0120dd833479283b5983b8aa62b41" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 7064.0</div>`)[0];
+            popup_7edd0e3b48654e9e8c1f10c7fbba7248.setContent(html_acd0120dd833479283b5983b8aa62b41);
+        
+
+        circle_a1a4e3dd2a94420ea1ca14a7f70339e6.bindPopup(popup_7edd0e3b48654e9e8c1f10c7fbba7248)
+        ;
+
+        
+    
+    
+            var circle_8a226a4e9a0e401bbc8dbe4bd8090bef = L.circle(
+                [-34.382639694937865, -58.60367072482244],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 4951.0, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_932cc1b1c4c74b13b178002b59c02039 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9569ed795e554a4c8f3b1751b628374b = $(`<div id="html_9569ed795e554a4c8f3b1751b628374b" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 247550.0</div>`)[0];
+            popup_932cc1b1c4c74b13b178002b59c02039.setContent(html_9569ed795e554a4c8f3b1751b628374b);
+        
+
+        circle_8a226a4e9a0e401bbc8dbe4bd8090bef.bindPopup(popup_932cc1b1c4c74b13b178002b59c02039)
+        ;
+
+        
+    
+    
+            var circle_dd2303438230482f8ad90997806122e0 = L.circle(
+                [-36.39085421413667, -57.274815571687704],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 36.54, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_408f6801f1214c4bb38cc8bfa6e50abb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8e1887aa4d74a2c83a0969222fecff7 = $(`<div id="html_d8e1887aa4d74a2c83a0969222fecff7" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 1827.0</div>`)[0];
+            popup_408f6801f1214c4bb38cc8bfa6e50abb.setContent(html_d8e1887aa4d74a2c83a0969222fecff7);
+        
+
+        circle_dd2303438230482f8ad90997806122e0.bindPopup(popup_408f6801f1214c4bb38cc8bfa6e50abb)
+        ;
+
+        
+    
+    
+            var circle_f31f37f92cd9465cb55ebe31e65ec648 = L.circle(
+                [-38.25578580166973, -62.2904249803661],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 212.22, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_9d188d93a56b4ce5bbf5276e34a71aa4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8c38116dabf4f17ac47ab89c62dbad9 = $(`<div id="html_f8c38116dabf4f17ac47ab89c62dbad9" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 10611.0</div>`)[0];
+            popup_9d188d93a56b4ce5bbf5276e34a71aa4.setContent(html_f8c38116dabf4f17ac47ab89c62dbad9);
+        
+
+        circle_f31f37f92cd9465cb55ebe31e65ec648.bindPopup(popup_9d188d93a56b4ce5bbf5276e34a71aa4)
+        ;
+
+        
+    
+    
+            var circle_b469ebd9fd1f4d49a66f7039ab7d3a64 = L.circle(
+                [-36.05643527399763, -62.634633249741654],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 622.86, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_70f18381ef2249d5ae1016fb51dad475 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffaa8efa38854a1a9ae5be6a29b193f9 = $(`<div id="html_ffaa8efa38854a1a9ae5be6a29b193f9" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 31143.0</div>`)[0];
+            popup_70f18381ef2249d5ae1016fb51dad475.setContent(html_ffaa8efa38854a1a9ae5be6a29b193f9);
+        
+
+        circle_b469ebd9fd1f4d49a66f7039ab7d3a64.bindPopup(popup_70f18381ef2249d5ae1016fb51dad475)
+        ;
+
+        
+    
+    
+            var circle_d66b75668c1a4f73b30207e1a4f338be = L.circle(
+                [-38.51167272196136, -60.2375839353888],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 786.46, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_fa9f5eead100417aacd0a82776e8525a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19c49ea42ef94024b5ae77b276a1789b = $(`<div id="html_19c49ea42ef94024b5ae77b276a1789b" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 39323.0</div>`)[0];
+            popup_fa9f5eead100417aacd0a82776e8525a.setContent(html_19c49ea42ef94024b5ae77b276a1789b);
+        
+
+        circle_d66b75668c1a4f73b30207e1a4f338be.bindPopup(popup_fa9f5eead100417aacd0a82776e8525a)
+        ;
+
+        
+    
+    
+            var circle_626003cdf3194a9e9542a997f5030f27 = L.circle(
+                [-36.49731527165265, -62.8634418902354],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 99.76, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_92c2eefcb99e43558d876e30f2544f74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_895d6cac4a094a248bd5c84494f08585 = $(`<div id="html_895d6cac4a094a248bd5c84494f08585" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 4988.0</div>`)[0];
+            popup_92c2eefcb99e43558d876e30f2544f74.setContent(html_895d6cac4a094a248bd5c84494f08585);
+        
+
+        circle_626003cdf3194a9e9542a997f5030f27.bindPopup(popup_92c2eefcb99e43558d876e30f2544f74)
+        ;
+
+        
+    
+    
+            var circle_67bbfc2b0e72415d9007e91ab97c82fb = L.circle(
+                [-34.59598628143625, -58.57908710080882],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 4454.48, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_2adb9b2949474eab89b075db95823b7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef4e7b7fc5cf45218f50735a2973a109 = $(`<div id="html_ef4e7b7fc5cf45218f50735a2973a109" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 222724.0</div>`)[0];
+            popup_2adb9b2949474eab89b075db95823b7e.setContent(html_ef4e7b7fc5cf45218f50735a2973a109);
+        
+
+        circle_67bbfc2b0e72415d9007e91ab97c82fb.bindPopup(popup_2adb9b2949474eab89b075db95823b7e)
+        ;
+
+        
+    
+    
+            var circle_2414e9c082c14872bd4951b7c665ffa0 = L.circle(
+                [-34.526632769956095, -58.50451431389543],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3661.8, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_e44f0667369d416aaba1f87768687781 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6183654cac0e45c8ba11011058e493d7 = $(`<div id="html_6183654cac0e45c8ba11011058e493d7" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 183090.0</div>`)[0];
+            popup_e44f0667369d416aaba1f87768687781.setContent(html_6183654cac0e45c8ba11011058e493d7);
+        
+
+        circle_2414e9c082c14872bd4951b7c665ffa0.bindPopup(popup_e44f0667369d416aaba1f87768687781)
+        ;
+
+        
+    
+    
+            var circle_6e41c4dd6bd3494886e53de28407fd02 = L.circle(
+                [-37.36975234633948, -57.065504128353545],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 421.36, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_0bcbd061e90242be8bf3182fc5705fc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32a630d4e7ad40d09ad9ecb813b2cba1 = $(`<div id="html_32a630d4e7ad40d09ad9ecb813b2cba1" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 21068.0</div>`)[0];
+            popup_0bcbd061e90242be8bf3182fc5705fc3.setContent(html_32a630d4e7ad40d09ad9ecb813b2cba1);
+        
+
+        circle_6e41c4dd6bd3494886e53de28407fd02.bindPopup(popup_0bcbd061e90242be8bf3182fc5705fc3)
+        ;
+
+        
+    
+    
+            var circle_69812512267847738bc0eef4b8960da0 = L.circle(
+                [-39.135907891299475, -62.7485893539578],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 371.08, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_8dee62def3be461684140e81f7f77334 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2e0d1bc9f2a4331bb3a787e2bda1d23 = $(`<div id="html_f2e0d1bc9f2a4331bb3a787e2bda1d23" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 18554.0</div>`)[0];
+            popup_8dee62def3be461684140e81f7f77334.setContent(html_f2e0d1bc9f2a4331bb3a787e2bda1d23);
+        
+
+        circle_69812512267847738bc0eef4b8960da0.bindPopup(popup_8dee62def3be461684140e81f7f77334)
+        ;
+
+        
+    
+    
+            var circle_0e64e7ca61304952b94cc0d9c7941665 = L.circle(
+                [-33.99714018230864, -59.12847095991659],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 1476.3, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_36b5de0729894ca683890706c542c7d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c66e6637c904a2b88a46f3b55db15b6 = $(`<div id="html_9c66e6637c904a2b88a46f3b55db15b6" style="width: 100.0%; height: 100.0%;">Provincia: buenos aires  Electores: 73815.0</div>`)[0];
+            popup_36b5de0729894ca683890706c542c7d7.setContent(html_9c66e6637c904a2b88a46f3b55db15b6);
+        
+
+        circle_0e64e7ca61304952b94cc0d9c7941665.bindPopup(popup_36b5de0729894ca683890706c542c7d7)
+        ;
+
+        
+    
+    
+            var circle_9d970bd2476d49718a2ebceec80efa44 = L.circle(
+                [-34.60641897865743, -58.371785305116674],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2587.48, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_c73e0a84445d420db9d7affc7f784160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46b120c9ff214a2289e1308aee7a90cd = $(`<div id="html_46b120c9ff214a2289e1308aee7a90cd" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 129374.0</div>`)[0];
+            popup_c73e0a84445d420db9d7affc7f784160.setContent(html_46b120c9ff214a2289e1308aee7a90cd);
+        
+
+        circle_9d970bd2476d49718a2ebceec80efa44.bindPopup(popup_c73e0a84445d420db9d7affc7f784160)
+        ;
+
+        
+    
+    
+            var circle_5aa1f1bca7c9432c8c8f3231ffdb89df = L.circle(
+                [-34.5858361441881, -58.394963570602116],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2207.36, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_efb4b508ea9f42009cdd371ae387e10b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_083d687d1c234c4b83e4000d9606a0ff = $(`<div id="html_083d687d1c234c4b83e4000d9606a0ff" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 110368.0</div>`)[0];
+            popup_efb4b508ea9f42009cdd371ae387e10b.setContent(html_083d687d1c234c4b83e4000d9606a0ff);
+        
+
+        circle_5aa1f1bca7c9432c8c8f3231ffdb89df.bindPopup(popup_efb4b508ea9f42009cdd371ae387e10b)
+        ;
+
+        
+    
+    
+            var circle_5a4d05685fcf4c1abd644bcbf95d4ed1 = L.circle(
+                [-34.613843081686426, -58.40265145122178],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2416.2, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_ce34419a3fa14e73b9a8bc71ec6c3ff7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_435a4f3552b34878a62f2955c4969838 = $(`<div id="html_435a4f3552b34878a62f2955c4969838" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 120810.0</div>`)[0];
+            popup_ce34419a3fa14e73b9a8bc71ec6c3ff7.setContent(html_435a4f3552b34878a62f2955c4969838);
+        
+
+        circle_5a4d05685fcf4c1abd644bcbf95d4ed1.bindPopup(popup_ce34419a3fa14e73b9a8bc71ec6c3ff7)
+        ;
+
+        
+    
+    
+            var circle_36d30863e3684ec89702785437805591 = L.circle(
+                [-34.642119648334784, -58.3876484933528],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2829.0, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_1e785dbec0a2458fabf71fc543e6e480 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_676ebe120ca6457b900f3ed368ffd5a5 = $(`<div id="html_676ebe120ca6457b900f3ed368ffd5a5" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 141450.0</div>`)[0];
+            popup_1e785dbec0a2458fabf71fc543e6e480.setContent(html_676ebe120ca6457b900f3ed368ffd5a5);
+        
+
+        circle_36d30863e3684ec89702785437805591.bindPopup(popup_1e785dbec0a2458fabf71fc543e6e480)
+        ;
+
+        
+    
+    
+            var circle_bfa09aeb90e94cfb91d51f46de85f8db = L.circle(
+                [-34.617369923785034, -58.420572190285796],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2555.46, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_d904666a7c9b4f7fbcfa2284ed898711 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f31370c7ab7d463098a13185fff2e868 = $(`<div id="html_f31370c7ab7d463098a13185fff2e868" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 127773.0</div>`)[0];
+            popup_d904666a7c9b4f7fbcfa2284ed898711.setContent(html_f31370c7ab7d463098a13185fff2e868);
+        
+
+        circle_bfa09aeb90e94cfb91d51f46de85f8db.bindPopup(popup_d904666a7c9b4f7fbcfa2284ed898711)
+        ;
+
+        
+    
+    
+            var circle_7a3f7d32518c4166bb1d5c8861a9c945 = L.circle(
+                [-34.61684339011082, -58.44356822806057],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2630.38, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_bda1223926e14dc78140ab385ac6c186 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_421b00fb01fe455bba6ea199ac19aa33 = $(`<div id="html_421b00fb01fe455bba6ea199ac19aa33" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 131519.0</div>`)[0];
+            popup_bda1223926e14dc78140ab385ac6c186.setContent(html_421b00fb01fe455bba6ea199ac19aa33);
+        
+
+        circle_7a3f7d32518c4166bb1d5c8861a9c945.bindPopup(popup_bda1223926e14dc78140ab385ac6c186)
+        ;
+
+        
+    
+    
+            var circle_ed557cf3ddad464fbae21149897bfc99 = L.circle(
+                [-34.63655441437195, -58.4518868569844],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2798.82, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_ecca9041562144a3835ef52bf6d1e1a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_633f227ceb9d4168964330e7944cfbc7 = $(`<div id="html_633f227ceb9d4168964330e7944cfbc7" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 139941.0</div>`)[0];
+            popup_ecca9041562144a3835ef52bf6d1e1a9.setContent(html_633f227ceb9d4168964330e7944cfbc7);
+        
+
+        circle_ed557cf3ddad464fbae21149897bfc99.bindPopup(popup_ecca9041562144a3835ef52bf6d1e1a9)
+        ;
+
+        
+    
+    
+            var circle_12da1f62384b4bb3a8b8f343dba04690 = L.circle(
+                [-34.67452654255418, -58.461921422037804],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2288.88, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_27449b44f72944c18c238d24180edc78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98a45abfcafa423f92122da462bdf860 = $(`<div id="html_98a45abfcafa423f92122da462bdf860" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 114444.0</div>`)[0];
+            popup_27449b44f72944c18c238d24180edc78.setContent(html_98a45abfcafa423f92122da462bdf860);
+        
+
+        circle_12da1f62384b4bb3a8b8f343dba04690.bindPopup(popup_27449b44f72944c18c238d24180edc78)
+        ;
+
+        
+    
+    
+            var circle_475767b8bb5f4bd49de5ab96cbc76ea3 = L.circle(
+                [-34.65178862761529, -58.49917514639794],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2414.84, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_3ffc6018a7d24d628c03f347f8083f6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35bced64cee04a74958f54968d219d99 = $(`<div id="html_35bced64cee04a74958f54968d219d99" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 120742.0</div>`)[0];
+            popup_3ffc6018a7d24d628c03f347f8083f6f.setContent(html_35bced64cee04a74958f54968d219d99);
+        
+
+        circle_475767b8bb5f4bd49de5ab96cbc76ea3.bindPopup(popup_3ffc6018a7d24d628c03f347f8083f6f)
+        ;
+
+        
+    
+    
+            var circle_2a14e74757cc48a9860be557499a5d7f = L.circle(
+                [-34.62785169421702, -58.50281799805622],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2433.78, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_15af8e3b7b2c42fc98bcdd7a42d40311 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4ae1af180ff433cbad56de1964a3473 = $(`<div id="html_c4ae1af180ff433cbad56de1964a3473" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 121689.0</div>`)[0];
+            popup_15af8e3b7b2c42fc98bcdd7a42d40311.setContent(html_c4ae1af180ff433cbad56de1964a3473);
+        
+
+        circle_2a14e74757cc48a9860be557499a5d7f.bindPopup(popup_15af8e3b7b2c42fc98bcdd7a42d40311)
+        ;
+
+        
+    
+    
+            var circle_cf2e3321aa6d4d7c84a880dd7211e47c = L.circle(
+                [-34.60613746353814, -58.49674145903074],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2855.12, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_cd145b3f41f045059ceec15dea704c45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f80613e11644b638644b4cfb51c6a50 = $(`<div id="html_1f80613e11644b638644b4cfb51c6a50" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 142756.0</div>`)[0];
+            popup_cd145b3f41f045059ceec15dea704c45.setContent(html_1f80613e11644b638644b4cfb51c6a50);
+        
+
+        circle_cf2e3321aa6d4d7c84a880dd7211e47c.bindPopup(popup_cd145b3f41f045059ceec15dea704c45)
+        ;
+
+        
+    
+    
+            var circle_127f0a1f86594e3986ee08ed6bed50a2 = L.circle(
+                [-34.56630955789376, -58.49044096398544],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3143.14, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_5d0df75608e94e0aa7c35ff47aea1bb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_403dcf1324e745e3a07e55063db4c6ca = $(`<div id="html_403dcf1324e745e3a07e55063db4c6ca" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 157157.0</div>`)[0];
+            popup_5d0df75608e94e0aa7c35ff47aea1bb8.setContent(html_403dcf1324e745e3a07e55063db4c6ca);
+        
+
+        circle_127f0a1f86594e3986ee08ed6bed50a2.bindPopup(popup_5d0df75608e94e0aa7c35ff47aea1bb8)
+        ;
+
+        
+    
+    
+            var circle_c95a7165d36e4cdea4cc396e2a5b8d5a = L.circle(
+                [-34.55448683769048, -58.453914150906094],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3509.8, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_0b86c2a8301c49ceabd407477c05fe30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_beb68a463be74a5fa203514c0cdc1e50 = $(`<div id="html_beb68a463be74a5fa203514c0cdc1e50" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 175490.0</div>`)[0];
+            popup_0b86c2a8301c49ceabd407477c05fe30.setContent(html_beb68a463be74a5fa203514c0cdc1e50);
+        
+
+        circle_c95a7165d36e4cdea4cc396e2a5b8d5a.bindPopup(popup_0b86c2a8301c49ceabd407477c05fe30)
+        ;
+
+        
+    
+    
+            var circle_57a1158d9e144cc1804214c46ada3c45 = L.circle(
+                [-34.573852383245914, -58.42226565572457],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 3288.4, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_6cc73195942e499283895d775fbe4ea0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b26a6d2cff046be8a4ac0320cbdc837 = $(`<div id="html_7b26a6d2cff046be8a4ac0320cbdc837" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 164420.0</div>`)[0];
+            popup_6cc73195942e499283895d775fbe4ea0.setContent(html_7b26a6d2cff046be8a4ac0320cbdc837);
+        
+
+        circle_57a1158d9e144cc1804214c46ada3c45.bindPopup(popup_6cc73195942e499283895d775fbe4ea0)
+        ;
+
+        
+    
+    
+            var circle_6071fc5295284919a367b061c1baf4ca = L.circle(
+                [-34.591883670156534, -58.46277402188276],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "radius": 2653.32, "stroke": true, "weight": 1}
+            ).addTo(map_dce3e03c0ea84be4948baf72c0611ab6);
+        
+    
+        var popup_f6ac894e016e4c93bf477d55bf394be9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4dc988140644bdcb21a8f6d96e45b3f = $(`<div id="html_c4dc988140644bdcb21a8f6d96e45b3f" style="width: 100.0%; height: 100.0%;">Provincia: caba  Electores: 132666.0</div>`)[0];
+            popup_f6ac894e016e4c93bf477d55bf394be9.setContent(html_c4dc988140644bdcb21a8f6d96e45b3f);
+        
+
+        circle_6071fc5295284919a367b061c1baf4ca.bindPopup(popup_f6ac894e016e4c93bf477d55bf394be9)
+        ;
+
+        
+    
+</script>
