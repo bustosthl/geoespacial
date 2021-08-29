@@ -1,0 +1,319 @@
+---
+title: "Geo y Salud"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Pasos de frontera y migración
+### Objetivo
+El objetivo de este trabajo es indagar si existe una relación entre la ubicación de los migrantes y los pasos fronterizos. La hipótesis es que los inmigrantes se ubican en los radios censales de las ciudades que están cerca de los pasos fronterizos. 
+
+El trabajo tendrá dos momentos. Primero definiremos para cada radio censal la distancia entre su centroide y el paso fronterizo más cercano. Luego, veremos en qué radio censal se ubican más extranjeros. 
+
+```{r librerias, echo=F, include=F}
+library(ggplot2)
+library(sf)
+library(units) 
+library(tidyverse)
+library(reshape2)
+library(gridExtra)
+library(classInt)
+library(rgdal)
+options(scipen=10000)
+
+# definimos ruta
+ruta <- "C://Users//Usuario//Documents//TT//geolocalizacion en R en salud//geoysalud//pasos y migrantes//"
+```
+
+Cargamos base de pasos de frontera.
+```{r carga_pasos, echo=F}
+# ruta https://gis.obraspublicas.gob.ar/layers/detalle_capa/daniela_arg_fa125/
+pasos <- read_sf('https://gis.obraspublicas.gob.ar/layers/download/daniela_arg_fa125/geojson/')
+head(pasos)
+class(pasos)
+summary(pasos)
+
+pasos_sinFluvial <- filter(pasos, !grepl("Fluvial",zts_lbl))
+```
+
+Graficamos de manera exploratoria los pasos de frontera.
+```{r mapa_pasos, echo=F}
+mapPasos <- ggplot() +
+  geom_sf(data=pasos, aes(color=zts_lbl))+
+  scale_fill_viridis_c() +
+  labs(color="Pasos de frontera",
+       title="Pasos de frontera",
+       subtitle="Argentina") +
+  theme_void()
+mapPasos
+```
+
+
+Cargamos los radios censales. Fuente: https://data.world/vazquez-brust/censo-argentino-2010
+```{r carga_radios, echo=F}
+archivo = paste0(ruta, "radios_argentina.geojson")
+
+radios <- st_read(archivo)
+```
+
+Obtenemos el centroide de cada radio.
+```{r radios_centroide, echo=F}
+radios_cast = st_cast(radios$geom, "GEOMETRYCOLLECTION") %>% st_collection_extract("POLYGON")
+radios_c <- st_point_on_surface(radios)
+```
+
+
+Hacemos un plot exploratorio de los radios y los pasos fronterizos.
+```{r mapa_radiosPasos, echo=F}
+ggplot() + 
+  geom_sf(data=radios, alpha=.5)+
+  geom_sf(data=pasos, aes(color=zts_lbl)) +
+  labs(color="Pasos de frontera",
+       title="Radios censales y pasos de frontera",
+       subtitle="Argentina") +
+  theme_void()
+```
+
+
+Calculamos la distancia entre el centroide del radio y el paso fronterizo más cercano. Cuidado! tarda bastante en realizar el cálculo.
+```{r distancia, echo=F, include=F}
+start <- proc.time()
+
+radios <- radios %>% # base radios censales
+  mutate(distancia=st_distance(radios_c, pasos$geometry[st_nearest_feature(radios_c, pasos$geometry),], by_element = TRUE)) %>% # Agregamos columna nueva con los valores del calculo de distancia
+  mutate(distancia=as.numeric(distancia)) #a número
+
+radios$distanciaKM <- radios$distancia / 1000
+
+duracion <- (proc.time()- start) / 60
+print("Duracion celda (en minutos)")
+print(duracion)
+```
+
+Calculamos nuevamente la distancia pero con el dataset sin pasos fluviales. Por el análisis posterior, intuímos que puede haber una mejor relación con la población migrante si no tenemos en cuenta los pasos fronterizos fluviales. 
+```{r distancia_sf, echo=F}
+start <- proc.time()
+
+radios <- radios %>% # base radios censales
+  mutate(distancia_sf=st_distance(radios_c, pasos_sinFluvial$geometry[st_nearest_feature(radios_c, pasos_sinFluvial$geometry),], by_element = TRUE)) %>% # Agregamos columna nueva con los valores del calculo de distancia
+  mutate(distancia_sf=as.numeric(distancia_sf)) #a número
+
+radios$distanciaKM_sf <- radios$distancia_sf / 1000
+
+duracion <- (proc.time()- start) / 60
+print("Duracion celda (en minutos)")
+print(duracion)
+```
+
+Veamos cómo queda el mapa argentino con ambas distancias.
+```{r mapaDistancias, echo=F}
+mapDistancia <- ggplot() + 
+  geom_sf(data = radios, aes(fill = distanciaKM), color = NA) +
+  scale_fill_viridis_c() +
+  labs(title = "Distancia a paso fronterizo más cercano",
+       subtitle = "Argentina",
+       fill = "En KM")+
+  theme_void()
+mapDistancia
+
+mapDistancia_sf <- ggplot() + 
+  geom_sf(data = radios, aes(fill = distanciaKM_sf), color = NA) +
+  scale_fill_viridis_c() +
+  labs(title = "Distancia a paso fronterizo más cercano",
+       subtitle = "Sin pasos fluviales",
+       fill = "En KM")+
+  theme_void()
+
+mapDistancia_sf
+```
+
+Veamos ahora la cantida de migrantes. Tenemos el siguiente archivo construido a partir del censo 2010.
+```{r carga_migrantes, echo=F}
+archivo = paste0(ruta, "migrantesPais_pivoted.csv")
+mig = read.csv(archivo)
+class(mig)
+#summary(mig)
+#head(mig)
+glimpse(mig)
+```
+
+Creamos la clave por la cual vamos a unir las diferentes bases.
+
+```{r clean_key, echo=F}
+mig$key = paste0(sprintf("%02d", mig$IDPROV),
+                 sprintf("%03d", mig$IDDPTO),
+                 sprintf("%02d", mig$IDFRAC),
+                 sprintf("%02d", mig$IDRADIO))
+```
+
+Agrupamos por radio y obtenemos la cantidad de argentinos, extranjeros y sus proporciones.
+```{r clean_migrantes, echo=F}
+mig_agrup <- 
+  mig %>%
+  group_by(key) %>% 
+  summarize(total = sum(contar),
+    nativos = sum(contar[extranjero == 1])) %>% 
+  ungroup() %>% 
+  mutate(extranjeros = total - nativos,
+         nativosProp = nativos/total,
+         extranjerosProp = extranjeros/total)
+
+```
+
+Juntamos con el dataset de radios.
+```{r join, echo=F}
+joined <- radios %>% 
+  mutate(key = RADIO) %>% 
+  left_join(mig_agrup, by="key")
+
+write.csv(joined, "test_csv.csv")
+```
+
+Vemos correlación. Da una correlación negativa de 0.28; si bien nos indica que hay una variación conjunta de ambas variables, no deja de ser una correlación débil. Para la distancia sin pasos fluviales, la correlación es levemente superior. 
+```{r corr, echo=F}
+cat("Correlación con distancia a pásos fronterizos: \n\n")
+joined%>% 
+  as.data.frame() %>% 
+  select("distanciaKM","extranjerosProp") %>% 
+  cor(use="complete.obs")
+
+cat("\nCorrelación con distancia a pásos fronterizos (sin pasos fluviales): \n\n")
+joined %>% 
+  as.data.frame() %>% 
+  select("distanciaKM_sf","extranjerosProp") %>% 
+  cor(use="complete.obs")
+```
+
+Veamos en mapa. Radios por cantidad de extranjeros.
+```{r mapa_extranjeros, echo=F}
+ggplot() + 
+  geom_sf(data = joined, aes(fill = extranjeros), color = NA) +
+  scale_fill_viridis_c() +
+  labs(title = "Cantidad de extranjeros por radio censal",
+       subtitle = "Argentina")+
+  theme_void()
+```
+
+
+Vemos que la variable extranjeros es muy asimétrica y tiene muchos outliers. Eso dificulta nuestra visualización. Intentemos cortar la variable en categorías. Probamos diferentes tipos de cortes, nos quedamos finalmente con el algoritmo K-Means, que minimiza la diferencia entre los integrantes del mismo grupo.
+```{r calculo_categorias, echo=F}
+variable <- round(joined$extranjerosProp*100,2)
+
+breaks <- classIntervals(variable, n=5, style="kmeans")$brks
+labels <- c("1. Muy baja","2. Baja","3. Media", "4. Alta","5. Muy alta")
+joined$extranjerosProp_kmeans <- cut(variable, breaks=breaks, labels=labels, include.lowest = T) 
+
+breaks <- classIntervals(joined$distanciaKM, n=5, style="kmeans")$brks
+joined$distanciaKM_kmeans <- cut(joined$distanciaKM, breaks=breaks, labels=labels, include.lowest = T)
+
+breaks <- classIntervals(joined$distanciaKM_sf, n=5, style="kmeans")$brks
+joined$distanciaKM_sf_kmeans <- cut(joined$distanciaKM_sf, breaks=breaks, labels=labels, include.lowest = T)
+```
+
+Graficamos nuevamente, ahora con las categorías que nos brinda el algoritmo K-Means para encontrar los mejores puntos de quiebre en una variable.
+```{r mapa_categorias, echo=F, fig.width=10}
+mapDistancia <- ggplot() + 
+  geom_sf(data = joined, aes(fill = distanciaKM_kmeans), color = NA) +
+  scale_fill_viridis_d() +
+  labs(title = "Proporción de extranjeros por radio censal",
+       subtitle = "Argentina")+
+  theme_void()
+
+mapDistancia_sf <- ggplot() + 
+  geom_sf(data = joined, aes(fill = distanciaKM_sf_kmeans), color = NA) +
+  scale_fill_viridis_d() +
+  labs(title = "Distancia a pasos fronterizos por radio censal",
+       subtitle = "Sin pasos fluviales",
+       fill = "Distancia")+
+  theme_void()
+
+
+mapExtranjeros <- ggplot() + 
+  geom_sf(data = joined, aes(fill = extranjerosProp_kmeans), color = NA) +
+  scale_fill_viridis_d() +
+  labs(title = "Distancia a pasos fronterizos por radio censal",
+       subtitle = "Argentina",
+       fill = "Proporción de extranjeros")+
+  theme_void()
+
+grid.arrange(mapDistancia_sf, mapExtranjeros, nrow = 1, ncol=2)
+```
+
+Intentemos ver provincia por provincia, para ver más en detalle.
+```{r mapa_provincias, echo=F}
+library(tmap)
+mapExtranjerosFacet <- tm_shape(joined) + 
+  tm_polygons(col = "extranjerosProp_kmeans", palette="viridis", border.alpha =0.1) +
+  tm_facets(by = "PROVINCIA")
+mapExtranjerosFacet
+
+mapDistanciaFacet <- tm_shape(joined) + 
+  tm_polygons(col = "distanciaKM_sf_kmeans", palette="viridis", border.alpha =0.1) +
+  tm_facets(by = "PROVINCIA")
+mapDistanciaFacet
+
+tm_shape(joined) + 
+  tm_polygons(col = "distanciaKM_sf", palette="viridis", border.alpha =0.1) +
+  tm_facets(by = "PROVINCIA")
+```
+
+*Hipótesis*: al ser Argentina un país con un elevado nivel de urbanización, comparar todos los radios censales puede llevarnos a trabajar con lugares con muy pocos habitantes. Creemos que, si restringimos el análisis alrededor de las capitales de las provincias, puede darnos una relación algo más fuerte. 
+
+Cargamos las capitales y hacemos buffers.
+```{r echo=F}
+archivo = paste0(ruta, "municipios_argentina.csv")
+muni <- read.csv(archivo, sep=";")
+
+muni <- muni %>% 
+  filter(esCapital=="SI") %>% 
+  filter(!is.na(lon),!is.na(lat)) %>% 
+  st_as_sf(coords=c("lon", "lat"), crs=4326)
+
+arg_poly <- radios %>% 
+  mutate(contar=1) %>% 
+  group_by(contar) %>% 
+  summarise(q=n()) %>% 
+  ungroup()
+
+ggplot()+
+  geom_sf(data=arg_poly) +
+  geom_sf(data=st_buffer(muni,2), color="red") +
+  geom_sf(data=muni, color="blue") +
+  labs(title = "Radios censales junto con las capitales 'agrandadas'",
+       subtitle = "Argentina")+
+  theme_void()
+
+# producimos la intersección
+muni_buffer = st_buffer(muni,2)
+radios_intersects = st_intersection(muni_buffer, joined)
+length(radios_intersects)
+```
+
+Chequeamos la correlación esta vez sólo con los radios censales cercanos a las capitales. No vemos un crecimiento importante.
+```{r echo=F}
+cat("Correlación sólo tomando los radios alrededor de las capitales de las provincias: \n\n")
+radios_intersects %>% 
+  as.data.frame() %>% 
+  select("distanciaKM","extranjerosProp") %>% 
+  cor(use="complete.obs")
+```
+
+
+```{r echo=F}
+ggplot() +
+  geom_sf(data=joined) +
+  geom_sf(data = radios_intersects, aes(fill = extranjerosProp_kmeans), color = NA) +
+  scale_fill_viridis_d() +
+  labs(title = "Radios censales junto con los radios evaluados",
+       subtitle = "Argentina",
+       fill = "Proporción de extranjeros")+
+  theme_void()
+```
+
+Como conclusión parcial, podemos decir que la relación es débil y en el mapa es difícil de ver, ya que la mayor proporción de extranjeros se concentra en las ciudades más pobladas y, por lo tanto, de radios más pequeños. Probablemente otras variables expliquen mejor la ubicación de los extranjeros en el país, tales como la población ya radicada, la disponibilidad de fuentes de empleo, ciertas redes internas de transporte, etc.
+
